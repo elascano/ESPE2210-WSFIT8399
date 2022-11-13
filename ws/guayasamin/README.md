@@ -4,4 +4,4 @@
 #### Instructor: Edison Lascano
 
 #### Student: Karla Guayasamin
-#### WSF  workshops
+#### WSF  exams
