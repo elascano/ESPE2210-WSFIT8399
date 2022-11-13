@@ -2,4 +2,4 @@
 ## ESPE 2022 10 
 ### Web Systems Fundamentals  IT 8399
 #### Student: Douglas Moreno
-#### WSF  assignments
+#### WSF  workshops
