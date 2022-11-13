@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+<title> Freddys firts page </title>
+
+</head>
+<body>
+<h1> Freddy´s web page </h1>
+<h2> Hola Mundo :) </h2>
+<h3> Bienvenido </h3>
+<p> Baby, la vida es un ciclo <br>
+Y lo que no sirve ya no lo reciclo <br>
+Así que de mi vida muévete <br>
+Que si te lo meto, es pa' recordar un TBT, yeh Ya yo me cansé de tus mentira'<br>
+Ahora hay una más dura que me tira <br>
+Todo tiene su final, todo expira <br>
+Tú eres pasado y el pasado nunca vira <br>
+
+Arranca pa'l carajo, mi cuerpo no te necesita <br>
+Lo que pide es un perreo sucio en La Placita <br>
+No creo que lo nuestro se repita <br>
+Dale, prende un Phillie, deja uno ready pa' ahorita, yeh <br>
+
+Odio saber que en ti una vez más yo confié <br>
+Odio todos los te amo que mil veces te texteé <br>
+Baby, mejor que tú, ahora tengo como die' <br>
+Lo nuestro iba en Bugatti y te quedaste a pie <br> </p>
+
+</body>
