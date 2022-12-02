@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <h2> STUDENTS</h2>
+    <form method="get">
+        <p>ID:<input type="text" name="ID"><br>
+        <p>Name:<input type="text" name="Name"><br>
+        <p>Password:<input type="password" name="Password"><br>
+            <input type="submit" value="ADD" name="Enviar"><br>
+    </form>
+    <hr size="5">
+    <form method="get">
+        <table border="1">
+            <caption> STUDENTS</caption>
+            <tr>
+                <td><label for="ID">ID</label></td>
+                <td><input type="text" id="ID" name="ID"></td>
+            </tr>
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input type="text" id="Name" name="Name"></td>
+            </tr>
+            <tr>
+                <td><label for="Password">Password</label></td>
+                <td><input type="password" id="Password" name="Password"></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td><input type="radio" checked id="male" name="Gender" value="m">
+                    <label for="male">male</label><br>
+                <input type="radio" id="female" name="Gender" value="f">
+                    <label for="female">female</label><br>
+                <input type="radio" id="other" name="Gender" value="o">
+                    <label for="other">other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Sport1">Sports</label></td>
+                <td><input type="checkbox" name="Soccer">
+                    <label for="Soccer">Soccer</label><br>
+                <input type="checkbox" name="Basqueball">
+                    <label for="Basquetball">Basquetball</label><br>
+                <input type="checkbox" name="Ecuavolley">
+                    <label for="Ecuavolley">Ecuavolley</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="submit">Add</label></td>
+                <td><input type="submit" value="submit" name="submit">
+                    <label for="reset">Reset</label>
+                <input type="reset" value="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
