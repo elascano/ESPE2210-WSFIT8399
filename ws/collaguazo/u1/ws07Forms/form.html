@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+</head>
+
+	 <h1>Elian Collaguazo</h1><br>
+	
+<body>
+	
+	<form method = "get">
+		<label for="fname">ID:</label><br>
+		<input type="text" value="id" name="id"><br><br>
+		
+		<label for="fname">First name:</label><br>
+	  	<input type="text" value="Elian" name="nombre"><br><br>
+
+		<label for="lname">Last name:</label><br>
+	  	<input type="text" name="last"><br><br>
+		
+		<label>Pasword:</label><br>
+		<input type="password" name="password"><br><br>
+		
+		<input type="submit" value="ADD">
+	</form>
+	
+	<hr size="5">
+	
+	<form method = "get">
+	<table>
+            <caption>Students</caption><br>
+            <tr>
+                <td><label for="id">ID:</label></td>
+                <td><input type="text" value="id2" name="id2"></td><br>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" value="name" name="name"></td><br>
+                
+            </tr>
+            <tr>
+                <td><label for="password">password:</label></td>
+                <td><input type="password" value="password2" name="password2"></td><br><br>
+            </tr>
+            <tr>
+                <td><label for="gender">genero:</label></td><br>
+                <td><input type="radio" id="male" name="gender" value="M">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="F">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="none" name="gender" value="N">
+                    <label for="none">None</label><br><br>
+                </td>
+            </tr>
+			
+            <tr>
+                <td><label for="sports">Deportes:</label></td><br>
+                <td><input type="checkbox" id="sport1" name="sport1" value="soccer"> 
+                    <label for="sport1">Futbol</label><br>
+                    <input type="checkbox" id="sport2" name="sport2" value="baseball"> 
+                    <label for="sport2">Baseball</label><br><br>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="add" name="add2">
+					<input type="reset" name="reset"></td>
+
+            </tr>
+        </table> 
+		</form>
+	
+	
+</body>
+</html>
