@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Forms</title>
+</head>
+<body>
+    <h2>Students</h2>
+<form method="get">
+    id: <input type="text" name="id"><br>
+    name:  <input type="text" name="name"><br>
+    pasword <input type="password" name="pasword"><br>
+    <input type="submit" name="agregar"value="ADD">
+</form>
+
+<hr size="s">
+<form method="get">
+<table>
+    <caption>STUDENTS</caption>
+    <tr>
+        <td><label for="id">id: </label></td>
+        <td><input type="text" name="id" id="id"></td>
+    </tr>
+    <tr>
+        <td><label for="name">name: </label></td>
+        <td><input type="text" name="name" id="name"></td>
+    </tr>
+    <tr>
+        <td><label for="password">pasword: </label></td>
+        <td><input type="password" name="pasword" id="pasword"></td>
+    </tr>
+
+
+    <tr>
+        <td>GENDER</td>
+        <td>
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="male">Male </label><br>
+            <input type="radio" name="gender" id="female" value="F">
+            <label for="female">Female </label><br>
+            <input type="radio" name="gender" id="other" value="O">
+            <label for="other">Other </label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>SPORTS</td>
+        <td>
+            <input type="checkbox" name="sports" value="soccer">
+            <label for="sport1"> soccer</label><br>
+
+            <input type="checkbox" name="sports" value="tennis">
+            <label for="sport2"> tennis</label><br>
+            <input type="checkbox" name="sports" value="ecuavoley">
+            <label for="sport3"> ecuavoley</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="submit">Agregar: </label></td>
+        <td><input type="submit" name="submit" id="submit"></td>
+        <td><label for="submit">Resetear: </label></td>
+        <td><input type="submit" name="submit" id="submit"></td>
+    </tr>
+<table>
+</form>
+</body>
+</html>    
