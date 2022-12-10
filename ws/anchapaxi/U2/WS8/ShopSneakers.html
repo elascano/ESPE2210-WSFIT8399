@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FORMULARIO</title>
+  </head>
+ <center><h1>SHOP SNEAKERS</h1><br></center>
+ <hr size="5">
+  <form method="get">
+    <center>
+        <table>
+            <caption></caption>
+            <tr>
+                <td><label for="name">NAME:</label></td>
+                <td><input type="text" name="usuario" id="usuario" pattern="^([A-Za-z]+)$" required/></td>
+            
+            </tr>
+            <tr>
+                <td><label for="name">LAST NAME:</label></td>
+                <td><input type="text" name="usuario" id="usuario" pattern="^([A-Za-z]+)$" required/></td>
+        
+            </tr>
+
+            <tr>
+                <td><label for="id">ID:</label></td>
+                <td><input type="text" pattern="[0-9]+" maxlength="10" minlength="10" required/></td>
+            </tr>
+
+            <tr>
+                <td><label for="mail">GMAIL:</label></td>
+                <td><input type="email" id="mail" name="use_mail" required/></td>
+            </tr>
+            <tr>
+                <td><label for="ID">PHONE NUMBER:</label></td>
+                <td><input type="tel" pattern="[0-9]+" maxlength="10" id="phone" minlength="10"name="phone" required/></td>    
+              </tr>
+            <tr>
+                <td><label for="gender">GENDER:</label></td>
+                <td><input type="radio" id="male" name="gender" value="M" required/>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="F" required/>
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="none" name="gender" value="N" required/>
+                    <label for="none">None</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Diseño" >SHOE BRAND:</label></td>
+                <td><select id="Marca" name="Marca" size="6" required>
+                        <option value="nike">NIKE BASKETBALL</option>
+                        <option value="nike">NIKE SOCCER </option>
+                        <option value="nike">NIKE RUN </option>
+                        <option value="adidas">ADIDAS BASKETBALL</option>
+                        <option value="adidas">ADIDAS SOCCER</option>
+                        <option value="adidas">ADIDAS RUN</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="shoe model">SHOE MODEL:</label>
+                <td><select name="shoe model" id="shoe model" required>
+                  <option value="Nike Basketball KB7">Nike Basketball KB7</option>
+                  <option value="Nike Basketball Air Jordan 11">Nike Basketball Air Jordan 11</option>
+                  <option value="Nike Basketball Kyrie Irving 9">Nike Basketball Kyrie Irving 9</option>
+                  <option value="Nike Soccer Mercurial 8">Nike Soccer Mercurial 8</option>
+                  <option value="Nike Soccer Phantom GT">Nike Soccer Phantom GT</option>
+                  <option value="Nike Soccer Premier 3">Nike Soccer Premier 3</option>
+                  <option value="Nike Run Free Rn 2018">Nike Run Free Rn 2018</option>
+                  <option value="Nike Run Youth Flex">Nike Run Youth Flex</option>
+                  <option value="Nike Run Air Zoom">Nike Run Air Zoom</option>
+                  <option value="Adidas Basketball Pro Next">Adidas Basketball Pro Next</option>
+                  <option value="Adidas Basketball Harden">Adidas Basketball Harden</option>
+                  <option value="Adidas Basketball Postmove">Adidas Basketball Postmove</option>
+                  <option value="Adidas Soccer Issues Unisex 3">Adidas Soccer Issues Unisex 3</option>
+                  <option value="Adidas Soccer Ground 2.0">Adidas Soccer Ground 2.0</option>
+                  <option value="Adidas Soccer Ghosted.4">Adidas Soccer Ghosted.4</option>
+                  <option value="Adidas Run Cloudfoam">Adidas Run Cloudfoam</option>
+                  <option value="Adidas Run Swift">Adidas Run Swift</option>
+                  <option value="Adidas Run Hiking Eq21">Adidas Run Hiking Eq21</option>
+                </select>
+                <br><br>
+                </td>
+
+                <tr>
+                    <td><label for="size">SIZE USA:</label></td>
+                    <td><input type="radio" id="6" name="size" value="6" required/>
+                        <label for="6">6</label>
+                        <input type="radio" id="6.5" name="size" value="6.5" required/>
+                        <label for="6.5">6.5</label><br>
+                        <input type="radio" id="7" name="size" value="7" required/>
+                        <label for="7">7</label>
+                        <input type="radio" id="7.5" name="size" value="7.5" required/>
+                        <label for="7.5">7.5</label><br>
+                        <input type="radio" id="8-5" name="size" value="8" required/>
+                        <label for="8">8</label>
+                        <input type="radio" id="8.5" name="size" value="8.5" required/>
+                        <label for="8.5">8.5</label><br>
+                        <input type="radio" id="9" name="size" value="9" required/>
+                        <label for="9">9</label>
+                        <input type="radio" id="9.5" name="size" value="9.5" required/>
+                        <label for="9.5">9.5</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pago">Forma de pago:</label></td>
+                    <td><input type="radio" id="efectivo" name="Pago" value="e" required/>
+                        <label for="efectivo">Efectivo</label><br>
+                        <input type="radio" id="crédito" name="Pago" value="c" required/>
+                        <label for="crédito">Credito</label><br>
+                        <input type="radio" id="transferencia" name="Pago" value="t" required/>
+                        <label for="transferencia">Transferencia</label><br>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td><input type="submit" value="SEND"></td>
+                <td><input type="reset" value="RESEND"></td>
+
+            </tr>
+        </table> 
+    </form >
+</center> 
+</html>
