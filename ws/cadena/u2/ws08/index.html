@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HTML5</title>
+  </head>
+ <h1>Diego Cadena</h1><br>
+
+     
+
+  
+  <hr size="1">
+  <form method="get">
+        <table>
+            <tr>
+                <td><label for="id">ID:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text"></td>
+                
+            </tr>
+            <tr>
+                <td><label for="password">password:</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Email:</label></td>
+                <td> <input type="email" name="email_control" required placeholder="ejemplo@dominio.com" /></td>
+            </tr>
+            <tr>
+                <td><label for="date">Fecha</label></td>
+                <td><input type="date" name="date_control" /></td>
+            </tr>
+            <tr>
+                <td><label for="age">Edad</label></td>
+                <td><input type="number" name="number_control" min="0" max="99" value="0" /></td>
+            </tr>
+            <tr>
+                <td><label for="range">Volumen </label></td>
+                <td><input type="range" name="range_control" min="0" max="10" value="0" /> </td>
+            </tr>
+            <tr>
+                <td><label for="color">Color</label></td>
+                <td><input type="color" name="color_control" /></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Telefono (solo numeros)</label></td>
+                <td> <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+            </tr>
+            <tr>
+                <td><label for="search">Busqueda</label></td>
+                <td><input type="search" id="search" name="search"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">genero:</label></td>
+                <td><input type="radio" id="male" name="gender" value="M" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="F">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="none" name="gender" value="N">
+                    <label for="none">None</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sports">Deportes:</label></td>
+                <td><input type="checkbox" id="sport1" name="sport1" value="soccer"> 
+                    <label for="sport1">Futbol</label><br>
+                    <input type="checkbox" id="sport2" name="sport2" value="baseball"> 
+                    <label for="sport2">Baseball</label><br>
+                    <input type="checkbox" id="sport3" name="sport3" value="ecuavoley"> 
+                    <label for="sport3">Ecuavoley</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="add" ></td>
+                <td><input type="reset"></td>
+
+            </tr> 
+        </table> 
+    </form>
+</html>
