@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<title>Liliana Chora</title>
+</head>
+
+<body>
+  <center><p style="color: brown; font-size:30px; font-family:verdana">Form HTML5 </p></center>
+    
+  <form>
+    <fieldset>
+        <legend>Personal Date </legend><br>
+        <label>First Name : </label>
+        <input type=”text” placeholder=”WriteFirstName”><br><br>
+        <label>Last Name : </label>
+        <input type=”text” placeholder=”WriteLastName”><br><br>
+        <td><label for="date">Date of Birth</label></td>
+                <td><input type="date" name="date_control" /></td>
+        <label>Gender:</label>
+        <select name="select">
+            <option value="value1">Men </option> 
+            <option value="value2" selected>Women </option>
+        </select><br><br>
+        <label>Age: </label>
+        <input type='checkbox' name='edad' value='20-39' /> 18-35
+        <input type='checkbox' name='edad' value='40-59' /> 36-59
+        <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>
+        <label>Email: </label>
+        <input name='nombre' type='email'/><br><br>
+        <label>Estady : </label>
+        <select id="dino-select">
+        <!--Etiqueta optgroup-->
+        <optgroup label="Estudios Universitarios">
+            <!--Etiqueta option-->
+            <option>Doctorade</option>
+            <option>Master</option>
+            <option>Grade</option>
+        </optgroup>
+        </select><br><br>
+        <label>Favorite Sport: </label>
+        <input list="browsers" name="myBrowser" />
+        <!--Etiqueta datalist-->
+        <datalist id="Soccer">
+            <option value="Tennis">
+            <option value="Dace">
+            <option value="Basketball">
+            <option value="athletics">
+            <option value="volleyball">
+            <option value="Rugby">
+        </datalist><br><br>
+        <textarea name="textarea" rows="10" cols="50">Write a Coment</textarea>
+    </fieldset>  
+    <input type="submit" value="Send " />
+          <input type="reset" value="reset">
+</form><br><br>
+
+ 
+
+</body>
+</html>
