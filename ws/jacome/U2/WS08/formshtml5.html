@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+    </head>
+    <body>
+        <h1>
+            <center><b><i>FORM HTML5</i></b></center>
+        </h1>
+        <center>
+            <hr size="5">
+            <caption><b>Information</b></caption><br><br>
+            <form method="get">
+                <b>Id:</b> <input type="text" size="4" maxlength="4"required="required"/><br><br>
+                <label form="name"><b>Name:</b></label>
+                <input type="text" name="nombre" placeholder="Write your name" minlength="5" maxlength="40" required pattern="[A-Za-z]+" />
+                <b>E-mail</b> <input type="email" id="email"placeholder="alguien@example.com"pattern=".+@globex\.com" size="30" required><br><br>
+                <b>Phone:</b><input type="tel" size="10" maxlength="10" /> <br><br>
+                <b>Birthday:</b> <input type="date" /><br><br>
+                <b>Color:</b><input type="color"/><br><br>
+                <label form="nombre"><b>Favorite animal:</b></label><input list="Favorite animal">
+                <datalist id="Favorite animal">
+                    <option value="Dog">
+                    <option value="Cat">
+                    <option value="Tiger">
+                    <option value="Lion">
+                    <option value="Giraffe">
+                    <option value="Panda bear">
+                    <option value="Snake">
+                </datalist><br><br>
+                <label form="fichero"><b>File:</b></label><input type="file" name="img" multiple>
+                <b>Amount:</b><input type="number" name="cant" id="cant" min="1" required="required"><br><br>
+                <label form="time"><b>Time:</b></label>
+                <input type="time" name="usr_time"><br><br>
+            </form>
+    
+            <input type="submit" value="Send">
+            <input type="Reset">
+    
+            <hr size="5">
+        </center>
+        
+    </body>
+</html>

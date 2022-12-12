@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        FORMULARIO CITAS
+    </title>
+</head>
+
+<body>
+    <h1>
+        <center><b>CLINICA DENTAL</b></center>
+        <center><b><i>FORMULARIO DE CITAS</i></b></center>
+    </h1>
+    <form method="get">
+    <table>
+    <h2>Datos del paciente</h2>
+    <tr>
+        <td><label for="id">Cédula de identidad (ID):</label></td>
+        <td><input type="text" name="Cédula de identidad"></td>
+    </tr>
+    <tr>
+        <td><label for="Nombrepac">Nombre:</label></td>
+        <td><input type="text" name="Nombre del Paciente">
+    </tr>
+    <tr>
+        <td><label for="appac">Apellido:</label></td>
+        <td><input type="text" name="Apellido del Paciente">
+    </tr>
+    <tr>
+        <td><label for="genero">Género:</label></td>
+        <td><input type="radio" genero="male" name="genero" value="Hombre">
+            <label for="male">Hombre</label><br>
+            <input type="radio" genero="female" name="genero" value="Mujer">
+            <label for="female">Mujer</label><br>
+            <input type="radio" genero="none" name="genero" value="Otro">
+            <label for="none">Otro</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="fechanac">Fecha de nacimiento:</label></td>
+            <td><input type="date" id="start" name="fecha de nacimiento"
+         value=""
+         min="1950-01-01" max="2099-12-31"><br></td>
+    </tr>
+    <tr>
+        <td><label for="numcel">Número de celular:</label></td>
+        <td><input type="text", name="Numero de celular"></td>
+    </tr>
+    <tr>
+        <td><label for="email">Correo electrónico:</label></td>
+        <td><input type="text", name="Email"></td>
+    </tr>
+
+    <tr>
+    <td><h3>Datos de la cita</h3></td>
+    </tr>
+    <td><label for="esp">Especialidad:</label></td>
+    <td><div>
+            <select>
+                <option>Odontologia General</option>
+                <option>Endodoncia</option>
+                <option>Odontopediatria</option>
+                <option>Ortodoncia</option>
+                <option>Odontologia estetica</option>
+                <option>Cirugia oral</option>
+                <option>Cirugia Maxilofacial</option>
+            </select>
+    <td><label for="doc">Doctores:</label></td>
+    <td>
+    <select>
+        <option>Silvia Jimenez</option>
+        <option>Paty Caraguay</option>
+        <option>Silvia Fernández</option>
+        <option>Henry Chancusio</option>
+        <option>Carolina Badillo</option>
+        <option>Byron Alvear</option>
+        <option>Luis Pacheco</option>
+        <option>Tony Pacheco</option>
+
+    </select>
+</div>
+
+<tr>
+    <td><label for="fechatencion">Fecha atención:</label></td>
+    <td><input type="date" id="start" name="Fecha atencion"
+        value=""
+        min="2000-01-01" max="2099-12-31"><br>
+    </tr>
+    <tr>
+        <td><label for="horatencion">Hora atención:</label></td>
+        <td><input type="text", name="Hora atencion"><br>
+    </tr>
+</table>
+<br>
+<input type="submit" , value="Agendar cita">
+<input type="reset" name="Restablecer"></td>
+
+</form>
+</body>
+</html>

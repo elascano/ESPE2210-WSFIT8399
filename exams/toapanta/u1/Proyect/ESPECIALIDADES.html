@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ESPECIALIDADES MEDICAS </title>
+</head>
+<body>
+<h1> ESPECIALIDADES MEDICAS </h1>  
+<form method="get">
+    <hr size="7">
+    <caption>   FORMULARIO   </caption><br>
+    <table>
+        <tr>
+            <td> <label for="ID">ID <br></label></td>
+            <td><input type="text", name="ID", id="ID" ></td>
+        </tr>
+        <tr>
+            <td> <label for="name">MEDICO ESPECIALISTA <br></label></td>
+            <td><input type="name", name="Name", id="Name"></td>
+        </tr>
+        <tr>
+            <td> <label for="name">DESCRIPCION </label><br></td>
+            <td><input type="name", name="name", id="name"></td>
+        </tr>
+        <tr>
+            <td> ESPECIALIDAD</td>
+            <td>
+            <input type="radio", name="Especialidad", id="Endodoncia", value="Endodoncia">
+            <label for="Endodoncia">Endodoncia</label> <br>
+            <input type="radio", name="Especialidad", id="Odontopediatria", value="Odontopediatria">
+            <label for="Odontopediatria">Odontopediatria</label> <br>
+            <input type="radio", name="Especialidad", id="Ortodoncia", value="Ortodoncia">
+            <label for="Ortodoncia">Ortodoncia</label> <br>
+            <input type="radio", name="Especialidad", id="Odontologia Estetica", value="Odontologia Estetica">
+            <label for="Odontologia Estetica">Odontologia Estetica</label> <br>
+            <input type="radio", name="Especialidad", id="Cirugia oral", value="Cirugia oral">
+            <label for="Cirugia oral">Cirugia oral</label> <br>
+            <input type="radio", name="Especialidad", id="Odontologia General", value="Odontologia General">
+            <label for="Odontologia General">Odontologia General</label> <br>
+            <input type="radio", name="Especialidad", id="Cirugia Maxilofacia", value="Cirugia Maxilofacia">
+            <label for="Cirugia Maxilofacia">Cirugia Maxilofacia</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>DIA DE REGISTRO</td>
+            <td><label for="REGISTRO"> <br></label>
+
+                <input type="date" id="start" name="trip-start"
+                       value="2000-07-22"
+                       min="2000-01-01" max="2024-12-31">
+                </td>
+        </tr>
+                <td>PERIODO</td>
+                <td>
+                <label for="ACTIVO">Seleccione una opción </label>
+                <select id="ACTIVO" name="Activo">
+                <option value="Activo">Activo</option>
+                <option value="No Activo">No Activo</option>
+              </select> 
+              </td> 
+            </tr> 
+            <tr>
+                <td><center><label for="submit"> <br></label> 
+                <input type="submit", name="submit", id="submit"></center></td>
+                <td><center><label for="submit"><br> </label>
+                <input type="reset", name="submit", id="submit"></center></td>
+            </tr>
+            <br>
+    </table>
+</form>
+</body>
+</html>
+    

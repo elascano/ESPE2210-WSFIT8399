@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<title>EXAM</title>
+</head>
+
+</head>
+
+<body >
+		<center><nav>
+		  <ul>
+			<li><a href="index.html"><em>Home</em></a></li>
+			<li><a href="architec.html"><em>Arquitects</em></a></li>
+			<li><a href="Us.html"><em>Us</em></a></li>
+			<li><a href="form.html"><em>¡Sign up!</em></a><
+		  </ul>
+        </nav></center>
+	<br>
+    <center>
+        <table style="border:2px solid DodgerBlue;" width="200" border="1">
+      <tbody>
+          <tr>
+            <th scope="col"><img src="../img/LoyTitle.JPG" width="500" height="119" alt=""/></th>
+          </tr>
+        </tbody>
+      </table>
+      <h1>SIGN UP&nbsp;</h1>
+      <table   style="border:2px solid DodgerBlue;" rules="rows" border="1" align="center" height="570" width="550">
+          <form>
+              <tr>
+                  <td><label for="zona"></label>
+                      <select  name="zona" id="zona">   
+                          <option value="1">Cedula</option>
+                          <option value="2">Pasaporte</option>
+                      </select>
+                  </td>
+                  <td><input type="text" name="identificación" size="45" placeholder="Identificacion"/></td>
+              </tr>
+          
+              <tr>
+                  <td><input type="text" name="nombre" placeholder="Primer Nombre"/></td>
+                  <td><input type="email" name="correo"  size="45" placeholder="Segundo Nombre"/></td>
+              </tr>
+                
+              <tr>
+                  <td><input type="text" name="apellido1" placeholder="Primer Apellido"/></td>
+                  <td><input type="text" name="apellido2"  size="45" placeholder="Segundo Apellido"/></td>
+              </tr>
+             
+              <tr>
+                  <td>Sexo:</td>
+                  <td><label for="sexo" required>
+                  <input type="radio" name="sexo" value="M"> Hombre
+                  <input type="radio" name="sexo" value="H"> Mujer
+                </label></td>
+              </tr>
+                
+              <tr>
+                  <td>Fecha de Nacimiento</td>
+                  <td><input type="date" size="45" name="datetime_control " min="1996-07-09" max="2023-12-31" /></td>
+              </tr>
+              <tr>
+                  <td><input type="email" name="correo" placeholder="Correo" required /></td>
+                  <td><input type="tel " name="tel_control " size="45" placeholder="Celular" required /></td>
+              </tr>	  
+            <tr>
+                  <td><select name="pais">
+                      <optgroup label="Provincias">
+                          <option value="1" title="1">Provincia</option>
+                          <option value="2" title="2">ORELLLANA</option>
+                          <option value="3" title="3">MANABI</option>
+                          <option value="4" title="4">LOS RIOS</option>
+                          <option value="5" title="5">ESMERALDAS</option>
+                          <option value="6" title="6">EL ORO</option>
+                          <option value="7" title="7">CHIMBORAZO</option>
+                          <option value="8" title="8">COTOPAXI</option>
+                      </optgroup>
+              </select></td>
+              <td><select name="pais">
+                      <optgroup label="Ciudades">
+                          <option value="1" title="1">Ciudades</option>
+                          <option value="2" title="2">QUITO</option>
+                          <option value="3" title="3">LATACUNGA</option>
+                          <option value="4" title="4">AMBATO</option>
+                          <option value="5" title="5">GUAYAQUIL</option>
+                          <option value="6" title="6">CUENCA</option>
+                          <option value="7" title="7">PORTOVIEJO</option>
+                          <option value="8" title="8">SANTO DOMINGO</option>
+                      </optgroup>
+                </select></td>
+              </tr>
+              <tr>
+                  <td>Recomendaciones</td>
+                  <td><textarea spellcheck="true" cols="50" rows="10"> Escriba aqui sus recomendaciones </textarea></td>
+                  
+              <tr>
+                  <td><input align="right" type="submit" value="Send" />
+                  <input type="reset" value="Reset"/></td>
+                  <td><input type="checkbox" name="chbox" > <span>Desea recibir noticias referentes a nuestra web</span></td>
+              
+              </tr> 
+              </tr>   
+        </form>
+      </table>
+          <br>
+      <center><img src="../img/pie.JPG" width="900" height="200" alt=""/><br></center>
+      </body>
+      </html>
