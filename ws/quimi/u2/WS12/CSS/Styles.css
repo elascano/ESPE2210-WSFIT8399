@@ -10,7 +10,7 @@ background-image: url(../Imagen/security.jfif);
 }
 .form-security-cameras{
     width: 400px;
-    background: #3f4953;
+    background: #3d3a61;
     padding: 30px ;
     margin: auto;
     margin-top: 100px;
@@ -25,7 +25,7 @@ background-image: url(../Imagen/security.jfif);
 }
 .controls {
     width: 100%;
-    background: #a6c6e6;
+    background: #89a9c9;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
