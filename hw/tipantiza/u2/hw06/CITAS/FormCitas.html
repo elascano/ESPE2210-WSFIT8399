@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta characters="UTF-8">
+    <meta name="viewport" content="width=device-wisth, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<title> OrtodonciaForm5</title>
+
+<body>
+    <form>
+        <div class="img">
+        </div>
+        <section class="form-register">
+            <img src="D:\Documentos\ESPE\OCTUBRE2022-MARZO2023\Fundamentos de Sistemas Web 8399\Segundo Parcial\Formularios_Actualizados\CITAS\OD5.jpeg"
+                width="345px" height="150">
+            <h1 align="center">AGENDAR UNA CITA</h1>
+            <h2>Datos del paciente</h2>
+            <br>
+            Cédula de indentidad <input class="controls" type="text" name="ID" id="Fname" placeholder="Ej: 1752373140">
+            Nombre <input class="controls" type="text" name="Fname" id="Fname" placeholder="Javier">
+            Apellido <input class="controls" type="text" name="Surname" id="Surname" placeholder="Diaz">
+            <td><label for="genero">Género</label><br></td>
+            <td><input type="radio" genero="male" name="genero" value="Hombre">
+                <label for="male">Hombre</label><br>
+                <input type="radio" genero="female" name="genero" value="Mujer">
+                <label for="female">Mujer</label><br>
+                <input type="radio" genero="none" name="genero" value="Otro">
+                <label for="none">Otro</label><br>
+            </td>
+            Fecha de nacimiento <input class="controls" type="date" name="Birthday" id="Number">
+            Número celular <input class="controls" type="text" name="Number" id="Number" placeholder="0969854125">
+            Correo electrónico <input class="controls" type="text" name="Email" id="Email"
+                placeholder="Ej: name@gmail.com">
+
+            <h2>Datos de la cita</h2>
+            <br>
+            Especialidad
+            <select>
+                <option>Seleccionar</option>
+                <option>Odontologia General</option>
+                <option>Endodoncia</option>
+                <option>Odontopediatria</option>
+                <option>Ortodoncia</option>
+                <option>Odontologia estetica</option>
+                <option>Cirugia oral</option>
+                <option>Cirugia Maxilofacial</option>
+            </select>
+            <br>
+            <br>Doctores
+            <select>
+                <option>Selecionar</option>
+                <option>Silvia Jimenez</option>
+                <option>Paty Caraguay</option>
+                <option>Silvia Fernández</option>
+                <option>Henry Chancusio</option>
+                <option>Carolina Badillo</option>
+                <option>Byron Alvear</option>
+                <option>Luis Pacheco</option>
+                <option>Tony Pacheco</option>
+            </select>
+            <br>
+            <br>Fecha para la cita <input class="controls" type="date" name="Birthday" id="Number">
+            <br>Hora para la cita <input class="controls" type="datetime" name="Birthday" id="Number">
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">Acepto <a href="#">términos y condiciones.</a></label>
+            </div>
+
+            <table width="100%">
+                <td align="center">
+                    <input class="buttons" type="submit" value="Agendar cita" width="25">
+                    <input class="buttons" type="reset" value="Reestablecer" width="40">
+                </td>
+            </table>
+
+        </section>
+
+    </form>
+</body>
+
+</html>
