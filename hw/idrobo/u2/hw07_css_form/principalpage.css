@@ -1,0 +1,124 @@
+*{
+    padding:0px ;
+    margin:0px ;
+    box-sizing: border-box ;
+}   
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.3rem;
+}
+
+.contenedor{
+    display: grid ;
+    grid-template-areas: "nav nav nav"
+                    "info info info"
+                    "infotxt infotxt infotxt"
+                    "footer footer footer" ;
+    grid-template-columns: 33.33vw 33.33vw 33.33vw ;
+    grid-template-rows: 10vh 70vh 10vh 10vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nav{
+    display: grid;
+    align-items: center;
+    grid-area: nav;
+    padding: 1rem 3rem;
+    grid-template-areas: "logolua text options search";
+    grid-template-columns: 10vw 10vw 60vw 20vw ;
+}
+
+.nav ul{
+    text-align: right;
+    list-style: none;
+}
+
+.nav ul li{
+    text-align: left;
+    display: inline-block;
+    padding-right: 1.6rem;
+}
+
+.nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logolua{
+    display: grid;
+    grid-area: logolua;
+    width: 4rem;
+}
+
+.text{
+    display: grid;
+    grid-area: text;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.search{
+    display: grid;
+    grid-area: search;
+    padding: 0.7rem;
+    margin-right: 5rem;
+    border-radius: 1rem;
+    box-shadow: 1px solid black;
+}
+
+.info{
+    display: grid;
+    grid-area: info;
+    grid-template-areas: "luagirl luaboy colections";
+    grid-template-columns: 33.33vw 33.33vw 33.33vw ;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.infotxt{
+    display: grid;
+    grid-area: infotxt;
+    grid-template-areas: "luagirltext luaboytext colectionstext";
+    grid-template-columns: 35vw 30vw 35vw ;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.colections{
+    width: 70%;
+    border: 0.7rem solid #28235b;
+    border-radius: 1rem;  
+    padding: 0rem 0.5rem;
+}
+
+.luagirl{
+    width: 60%;
+    border: 0.7rem solid #ba4b6e;
+    border-radius: 1rem;
+}
+
+.luaboy{
+    width: 60%; 
+    border: 0.7rem solid #28235b;
+    border-radius: 1rem;  
+    padding: 0rem 0.5rem;
+}
+
+.colectionstxt{
+    width: 60%; 
+    border: 0.7rem solid #28235b;
+    border-radius: 1rem;  
+    padding: 0rem 0.5rem;
+}
+
+
+
+
