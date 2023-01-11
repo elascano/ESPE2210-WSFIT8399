@@ -5,12 +5,13 @@
 }
 
 body {
-    background-image: url('../images/logogirl.png');
+    background-image: url("../SOLUCION/OD4.jpeg");
+    background-size: cover;
 }
 
-.form-CardPayment {
+.form-deals {
     width: 400px;
-    background: #24303c;
+    background: #24363c;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -20,9 +21,9 @@ body {
     box-shadow: 7px 13px 37px #000;
 }
 
-.form-CardPayment h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
+.form-deals h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .controls {
@@ -38,24 +39,24 @@ body {
 
 }
 
-.form-CardPayment p {
+.form-deals p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
 }
 
-.form-CardPayment a {
+.form-deals a {
     color: white;
     text-decoration: none;
 }
 
-.form-CardPayment a:hover {
+.form-deals a:hover {
     color: white;
     text-decoration: underline;
 }
 
-.form-CardPayment .buttons {
+.form-deals .buttons {
     width: 100%;
     background: #1f53c5;
     border: none;
@@ -63,4 +64,23 @@ body {
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
+
+.img_container {
+    text-align: center;
+}
+.tacbox {
+    color: #000;
+  display:block;
+  padding: 1em;
+  margin: 2em;
+  border: 3px solid #ddd;
+  background-color: rgb(48, 195, 203);
+  max-width: 800px;
+}
+
+input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
 }

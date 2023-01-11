@@ -1,16 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url('../images/logogirl.png');
+    background-image: url('Fondo_Color.jpg');
+    background-size: contain;
 }
 
-.form-CardPayment {
+.form-register{
     width: 400px;
-    background: #24303c;
+    background: #039297;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -19,48 +20,44 @@ body {
     color: white;
     box-shadow: 7px 13px 37px #000;
 }
-
-.form-CardPayment h4 {
+.form-register h4{
     font-size: 22px;
     margin-bottom: 20px;
 }
-
-.controls {
+.controls{
     width: 100%;
-    background: #24303c;
+    background: #039297;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #75faff;
     font-family: 'calibri';
     font-size: 18px;
     color: white;
-
 }
-
-.form-CardPayment p {
+.form-register p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
-}
-
-.form-CardPayment a {
+  }
+  
+  .form-register a {
     color: white;
     text-decoration: none;
-}
-
-.form-CardPayment a:hover {
+  }
+  
+  .form-register a:hover {
     color: white;
     text-decoration: underline;
-}
-
-.form-CardPayment .buttons {
+  }
+  
+  .form-register .buttons {
     width: 100%;
-    background: #1f53c5;
+    background: #0b686b;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
-}
+  }

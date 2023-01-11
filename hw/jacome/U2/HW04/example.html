@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #e6970f;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #2edc99;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #98c8d8;
+        }
+
+        .aside {
+            background-color: #d8b2d0;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #e7e762;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        image {
+            max-width: 100% height=10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Responsive Web Desing</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>What?</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <p>
+                Responsive web design makes your web page look good on all devices. <br>
+                Responsive web design uses only HTML and CSS. <br>
+                Responsive web design is not a program or a JavaScript. <br>
+
+
+            </p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Example</h2>
+                <img src="img/example.png" height="150px">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Ivonne Jacome</p>
+    </div>
+
+</body>
+
+</html>
