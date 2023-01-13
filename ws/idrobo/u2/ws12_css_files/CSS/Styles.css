@@ -38,24 +38,24 @@ body {
 
 }
 
-.form-register p {
+.form-CardPayment p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
 }
 
-.form-register a {
+.form-CardPayment a {
     color: white;
     text-decoration: none;
 }
 
-.form-register a:hover {
+.form-CardPayment a:hover {
     color: white;
     text-decoration: underline;
 }
 
-.form-register .buttons {
+.form-CardPayment .buttons {
     width: 100%;
     background: #1f53c5;
     border: none;

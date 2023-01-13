@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/FONDO.jpg');
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+
+.form-CardPayment {
+    width: 700px;
+    background: #f7bebb;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(3, 3, 3);
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-CardPayment h4 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.form-CardPayment h5 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'arial';
+    font-size: 18px;
+    color: white;
+
+}
+
+.form-CardPayment p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-CardPayment a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-CardPayment a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-CardPayment .buttons {
+    
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    margin: 16px 0;
+    font-size: 16px;
+    
+}
+.img_container {
+    text-align: center;
+}
+.tacbox {
+    color: #000;
+  display:block;
+  padding: 1em;
+  margin: 2em;
+  border:  1px solid #1f53c5;
+  background-color: rgb(248, 180, 170);
+  max-width: 800px;
+}
+
+input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+    .div-img {
+        display: grid;
+  place-content: center;
+      }
