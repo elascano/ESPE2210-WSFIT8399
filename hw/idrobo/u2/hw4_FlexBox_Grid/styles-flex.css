@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item1 {
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.flex-item2 {
+    background-color: blue;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.flex-item3 {
+    background-color: grey;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+}

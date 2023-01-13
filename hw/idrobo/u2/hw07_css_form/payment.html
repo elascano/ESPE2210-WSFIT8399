@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Payment Form </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <link href="CSS/stylesP.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="principalpage.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+
+            <tr>
+
+
+                <div class="contenedor">
+                    <nav class="nav">
+                        <a href="/06Code/principalpage.html">
+                            <div class="div-img">
+                                <img src="../06Code/images/lua.jpg" width="175" alt="Luastore logo">
+                            </div>
+                            </a>           
+                        <p class="text"></p>
+                        <ul class="options">
+                            <li><a href="/06Code/aboutus.html">About Us</a></li>
+                            <li><a href="/06Code/products.html">Products</a></li>
+                            <li><a href="/06Code/collection.html">Collections</a></li>
+                            <li><a href="/06Code/forms.html">Buy</a></li>
+                        </ul>
+                        <input type="text" class="search" placeholder="Search">
+                    </nav>
+                
+
+            </tr>
+ <br>
+
+    <section class="form-CardPayment">
+        <h4 align="center">Card Payment</h4>
+        <h5>Payment types</h5>
+        <div class="img_container">
+            <img src="../06Code/images/cards.png" width="100" height="25">
+        </div>
+        <form method="get" action="">
+            Full Name <input class="controls" type="text" name="Name" id="Name" placeholder="Name"
+                pattern="^([A-Za-z]+)$">
+            Card Number <input class="controls" type="number" name="Card" id="Card" placeholder="Card Number"
+                minlength="16">
+            Expiration Date <input class="controls" type="date" name="Expiration" id="Expiration" placeholder="Date"
+                min="2022-12-13">
+            Security Code <input class="controls" type="password" name="Security" id="Security"
+                placeholder="3 or 4 digits" minlength="3" maxlength="4">
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">I agree with <a href="#">Terms and Condition.</a></label>
+            </div>
+
+            <tr>
+                <input class="buttons" type="reset" value="Reset">
+
+                <input class="buttons " type="submit" value="Save">
+            </tr>
+            <footer id="main-footer">
+                <p>&copy; 2023 <a href="#">Lua Store</a></p>
+            </footer>
+
+            </section>
+
+
+        </form>
+
+        
+
+</body>
+
+
+</html>
