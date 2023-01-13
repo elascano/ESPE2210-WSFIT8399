@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset="UTF-8">
+         <title> FORM </title>
+</head>
+<body>  
+<h1> Freddy Rodriguez A.</h1>
+    <form >
+        <p>
+        FULL NAME: <input type="text" name="name_control" autofocus required />
+        <br />
+        PASSWORD: <input type="password" name="pass_control" required />
+        <br />
+        E-MAIL: <input type="email" name="email_control" required />
+        <br />
+        DATE OF BIRTH: <input type="date" name="date_control" />
+        <br />
+        NUMBER PHONE: <input type="tel" name="tel_control" />
+        <br />
+        FAVORITE COLOR: <input type="color" name="color_control" />
+        <br />
+        <td><label for="gender">GENDER:</label></td> <br>
+                <td><input type="radio" id="male" name="gender" value="M" required/>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="F" required/>
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="none" name="gender" value="N" required/>
+                    <label for="none">None</label>
+                </td><br>
+        SYSTEM OPERATIVE FAVORITE:
+        <select name="sistema_control">
+                <option value="windows">Windows</option>
+                <option value="linux">Linux</option>
+                <option value="macos">Macos</option>
+        </select>
+        <br/>
+        YOU KNOW HOW TO USE PYTHON?
+         <input name="python_control" type="radio"  value="si" checked /> Si
+         <input name="python_control" type="radio" value="no" /> No
+                 <br/>
+                 COMMENTS:<br>
+                 <textarea name="comentario_control" rows="4" cols="50"></textarea>
+         <br/>
+         <br/>
+        
+        <input type="reset" value="RESET">
+        <input type="submit" value="SEND" />
+    </form>
+</body>
+</html>
