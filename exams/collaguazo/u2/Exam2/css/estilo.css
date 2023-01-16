@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul {    
+  list-style:none;
+  font-size: 0;
+  /* IMPORTANTE */
+  padding: 0;
+}
+li {
+  display: inline-block;
+  width: 25%;
+
+  
+   /* IMPORTANTE */
+   position:relative;
+}
+a {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: SkyBlue;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+a:hover {
+  background-color: RoyalBlue;
+}
+
+ul ul { /* si un ul es padre de otro ul entonces... esto seria el submenu */
+  
+   /* IMPORTANTE */
+   position: absolute;
+   display: none; 
+}
+ul ul li { /* los LI dentro del submenu, esta propiedad logra que ocupe todo lo que pueda */
+  width: 100%;
+}
+
+/* Al pasar sobre los LI, si tiene un UL, se MOSTRARA */
+ul li:hover ul {
+   display:block;
+}
+
+ul li:hover ul a:hover {
+  background-color: RoyalBlue 
+}
+
+
+
+
+
+body{
+	background-color: #E8EBF0;
+}
+		
+a{
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+		
+h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #763c28;
+}
+		
+a:link{
+	color: #696969;
+}
+		
+a:visited{
+	color: #696969;
+}
+		
+a:hover{
+	color: #302431;
+}
+
+button{
+			padding-left: 13px;
+			padding-right: 13px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 8px;
+			color: black;
+    		background-color: #FDF5E6;
+			cursor: pointer;
+		}
+
+form{
+	padding: 25px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+}

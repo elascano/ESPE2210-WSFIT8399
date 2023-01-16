@@ -1,0 +1,50 @@
+body{
+    background-color: #FFFFFF;
+    
+  }
+table{
+  
+}
+
+  a {
+    color: antiquewhite;
+ 
+  }
+  h2{
+    margin: auto;
+    text-align:center;
+    font-family:'Bebas Neue', cursive;
+    color: #d9f1ea;
+    font-size: 40px;
+    }
+    h3{
+        margin: auto;
+        text-align:center;
+        font-family:'Bebas Neue', cursive;
+        color: #d9f1ea;
+        font-size: 25px;
+        }
+h1{
+    color: #cac6a4;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+}
+a{   
+    text-decoration: none;
+    padding: 2px 20px 0; /*el 20 es el espacio entre los botones del menu los demas numeros no les cacho*/
+    color:#f8b864;
+    font-size: 20px;
+}
+a:focus{  /*Para cuando se da clic*/
+    border-bottom: 1px solid;
+    background: #256eaa;
+}
+a:hover { /*Para pasar pon encima el mouse*/
+    
+    background: #256eaa;
+  }
+
+  table td {   /*Centrar los elementos de la cabecera logo,titulo,etc*/
+    text-align: center;
+    color: blue;
+  }

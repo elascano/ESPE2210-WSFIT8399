@@ -1,0 +1,377 @@
+*
+{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
+}
+
+body
+{
+  background-color: #001c1c;
+  padding: 20px;
+}
+
+header,
+section,
+footer
+{
+  text-align: center;
+  background-color: #fffefe;
+  border-radius: 15px;
+  padding:30px;
+}
+
+header,
+footer
+{
+  width: 100%;
+  padding: 40px;
+}
+
+header,
+section,
+footer
+{
+  margin-bottom: 5px;
+}
+
+h1
+{
+  margin: 0;
+}
+
+body{
+  font-family:arial,sans-serif;
+    }
+
+#nave{
+  width:100%;
+  height:120px;
+  background:url(../img/color.png);
+  background-size:cover;
+  border-radius: 15px;
+}
+#nave_wrapper{
+  width:1100px;
+  height:80px;
+  background:#377D7A;
+  margin-left:auto;
+  margin-right:auto; 
+  margin-top:0px;
+  opacity:0.7;
+  filter:alpha (opacity=70)/*IE8 earlier */
+}
+
+#nave_wrapper ul li{
+  list-style:none;
+  display:inline;
+  font-weight:bold;
+  padding:50px;
+ 
+}
+#nave_wrapper a{
+  color:white;
+  text-decoration:none;
+  padding:10px
+}
+/*seleccion menu*/
+#nave_wrapper ul li:hover{
+  background:#e2860c;
+  transition:all 0.45s;
+  opacity:0.9s;
+  border-radius: 15px;
+  filter:alpha (opacity=90)/*IE8 earlier */ 
+    
+}
+
+
+
+
+section
+{
+  float: center;
+  width: calc(99% - 100px);
+  margin: 0 50px 50px 50px;
+}
+
+footer
+{
+  clear: both;
+  
+}
+
+/*Menu de opciones*/
+/* Left column (menu) */
+.left {
+  flex: 15%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+
+/* Estilo el menú de navegación dentro de la columna izquierda */
+* {
+  box-sizing: border-box;
+}
+
+/* Crear un diseño de columna con Flexbox */
+.row {
+  display: flex;
+}
+
+/* Columna izquierda (menú) */
+.left {
+  flex: 25%;
+  padding: 1px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Columna derecha (contenido de la página) */
+.center {
+  flex: 5%;
+  padding: 1px;
+  }
+
+.right {
+  flex: 75%;
+  padding: 1px;
+  }
+
+/* color marco del buscador*/
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  color: teal;
+  border:1px solid #ddd;
+}
+
+/* Estilo el menú de navegación dentro de la columna izquierda */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* color texto */
+#myMenu li a {
+  background-color: teal;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+/* color selector Menu seccion */
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+#tabla-precios {
+    display:inline-block;
+    width:100%;
+    margin-top:50px
+   }
+   
+   /*Columnas*/
+   
+   .precio-col {
+    display:inline-block;
+    background-color:#f3f3f3;
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+    margin-bottom:50px;
+    box-shadow: 0px 2px 5px #ddd
+   }
+   
+   @media screen and (min-width:768px) {
+    .precio-col {
+    width:32%;
+    float:left;
+    margin-right:2%
+    }
+    
+    .precio-col:last-child {
+    margin-right:0
+    }
+   }
+   
+   /*Headers*/
+   
+   .precio-col-header {
+    background-color:#333;
+    padding:20px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px
+   }
+   
+   .precio-col:nth-child(2) .precio-col-header {
+    background-color:#73ddc2
+   }
+   
+   .precio-col-header h3 {
+    color:#f3f3f3;
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:0
+   }
+   
+   .precio-col-header p {
+    text-align:center;
+    color:#f3f3f3;
+    font-size:14px;
+    margin-bottom:0
+   }
+   
+   /*Características*/
+   
+   .precio-col-features {
+    padding: 0 20px 20px 20px
+   }
+   
+   .precio-col-features p {
+    padding:20px 0;
+    margin:0;
+    text-align:center;
+    border-top:1px solid #ddd
+   }
+   
+   .precio-col-features p:first-child,
+   .precio-col-features p:last-child {
+    border-top:none
+   }
+   
+   /*Comprar*/
+   
+   .precio-col-comprar {
+    padding:10px;
+    max-width:250px;
+    text-align:center;
+    background-color:#dd9933;
+    margin: 0 auto 20px;
+    border-radius:10px;
+    border: 2px solid #dd9933;
+    transition: all 0.3s
+   }
+   
+   .precio-col-comprar a {
+    color:#f3f3f3;
+    padding:10px;
+    font-size:20px;
+    text-transform:uppercase;
+    transition: all 0.3s
+   }
+   
+   .precio-col-comprar:hover {
+    background-color:#f3f3f3;
+    transition: all 0.3s
+   }
+   
+   .precio-col-comprar:hover a {
+    color:#dd9933;
+    transition: all 0.3s
+   }
+   
+   .picture {
+    transform-origin: bottom;
+    transform: translateY(7.5%);
+    transition: transform 0.3s ease-in-out
+    
+   }
+
+  /* div.img_medicina{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+   }*/
+
+   .img{
+    margin:10px auto;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    width:200px;
+    height:200px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(../img/imagen.jpg);
+    background-size: cover;
+    }
+  .img img{
+    width: 100%;
+  }
+
+  .precio-col a{
+    text-decoration: none;
+  }
+  
+ 
+
+
+
+/*tamaño caja mensaje*/
+.form__fieldset{
+  max-width: 1300px;
+ }
+/*titulo*/
+.form__legend {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+/*igualar texto y cajas*/
+.form__row {
+  margin-bottom: 0.2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+/*cajas*/
+.form__label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  flex: 1 0 120px;
+  max-width: 400px;
+}
+
+/*tamaño= cajas*/
+.form__textinput, .form__textarea {  
+  flex: 1 0 300px;
+  max-width: 500px;
+  box-sizing: border-box;
+  
+  }
+
+/*Borde cajas*/
+.form__textinput:focus:invalid,
+.form__textarea:focus:invalid {
+    border: 2px solid red;
+  font-size: 18px;
+  color: black;
+}
+/*Borde cajas ya contestadas*/
+ .form__textinput:valid ,
+ .form__textinput:focus:valid ,
+.form__textarea:valid ,
+.form__textarea:focus:valid  {
+  border: 2px solid green;
+  font-size: 15px;
+  color: black;
+}
+
+.form__textarea {
+  height: 90px;
+  
+ }
