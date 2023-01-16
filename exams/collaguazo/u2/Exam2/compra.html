@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TECNOSMART</title>
+<link rel="icon" type="image/x-icon" href="Imagenes/sello.png">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+	
+	<header>
+	
+			<a href="Index.html"><img src="imagenes/sello.png" alt="Logo" width="250" height="120"></a>	<!--- INSERTAR LOGO --->
+
+	</header>
+	
+		
+	<h1 align="center">TECNOSMART</h1><br> <!--- TITULO --->
+
+		
+<div align="center">	<!--- DIV PARA CENTRAR --->
+	<table width="1089" height="41.6" border="0">	<!--- SE INSERTA UNA TABLA --->
+	  <tbody>
+		<tr class="header">
+		  <td> <p align="center"><a  href="Index.html">INICIO</a></p></td>	
+
+		  <td> <p align="center"><a href="inicio.html">PRODUCTOS</a></p></td>
+
+		  <td> <p align="center"><a href="compra.html">COMPRAR</a></p></td>
+		</tr>
+	  </tbody>
+	</table>
+</div>
+
+	<br><br><br><br>
+
+
+<center>
+	<h1>COMPRA</h1>
+	<table width="401" border="1">
+	  <tr>
+	  <td>
+		  <form name="form1" method="get" >
+
+			  <p><b>Datos del Producto</b></p>
+
+			  <label for="idproducto">ID producto</label>
+			  <input type="text" name="idproducto" id="idproducto">
+			  
+			  <p>
+				<b>Tipo de teclado::</b>
+			  </p>
+
+			  <label>
+				<input type="radio" name="tipo" value="Habitacion" id="tipo_1">
+			  	Gamer
+			  </label><br>
+				
+			  <label>
+				<input type="radio" name="tipo" value="Cocina" id="tipo_2">
+				Estudiante
+			  </label><br>
+				
+			  <label>
+				<input type="radio" name="tipo" value="Sala" id="tipo_3">
+				Otros
+			  </label><br>        
+
+			  
+			  <p>
+				  <label for="envio">Tipo de Entrega</label>
+				  <select name="envio" id="ecivil2">
+					<option value="pa">...</option>
+					<option value="dm">En Casa</option>
+					<option value="se">Personal</option>
+					<option value="ea">Retiro de Agencia</option>
+					<option value="ep">Envios a Provincia</option>
+				  </select>
+		  	  </p>
+			  
+				<b>Metodos de Pago</b>
+			<p>
+			  <label for="pago">Introduce el metodo de pago</label>
+			  <select name="pago" id="pago">
+				<option value="pa">...</option>
+				<option value="pe">Dinero</option>
+				<option value="pt">Tarjeta de Credito</option>
+				<option value="pd">Deposito</option>
+				<option value="pd">Transferencia</option>
+			  </select>
+			</p>
+			  
+			<p>
+			  <label for="email2">Email</label>
+			  <input type="email" name="email" id="email">
+			</p>
+
+
+			<b>Datos de Facturacion</b>
+			  
+			<p>
+		   		<label for="descripcion">Descripcion de los productos entregados: </label>
+		  	 	<input type="text" name="descripcion" id="descripcion">
+			</p>
+			  
+			<p>
+				<label for="cantidadtotal">Monto a pagar</label>
+				<input type="number" name="cantidadtotal" id="cantidadtotal"><br>
+			</p>
+		    <center>
+			  <p>
+			  <button name="send" type="submit" value="Enviar">Enviar</button>
+			  <button name="reset" type="reset" value="Borrar">Borrar</button>
+			  </p>
+		    </center>
+			  
+			  
+	  	  </form>
+	  </td>
+	  </tr>
+	</table>
+</center>
+	
+		<br><br><br><br>
+
+
+		<footer align = "center">
+			<p>Realizados por Elian Collaguazo</p>
+			<p>Fundamentos de sistemas web</p>
+			<p>8399</p>
+		</footer>
+	
+</body>
+</html>

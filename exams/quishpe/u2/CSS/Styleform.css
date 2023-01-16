@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/estudiantes.jpg);
+    background-size: cover;
+}
+
+.form_estudiantes {
+    width: 400px;
+    background: #40a9b2;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form_estudiantes h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+
+    width: 100%;
+    background: #b7e1e5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #93d0d2;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+}
+
+select {
+    width: 100%;
+    background: #b7e1e5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #93d0d2;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+}
+
+.form_estudiantes {
+    color: black;
+    text-decoration: none;
+}
+
+.form_estudiantes a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.form_estudiantes .button {
+    width: 30%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+}
+
+header {
+    background: rgb(11, 11, 11);
+    color: rgb(15, 15, 15);
+    height: 80px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background: #536262;
+
+}

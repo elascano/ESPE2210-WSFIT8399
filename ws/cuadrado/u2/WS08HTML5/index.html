@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5</title>
+</head>
+
+<body>
+<table width="31%" border="0" align="center">
+  <tr>
+    <td> 
+    <form name="form1" method="post" action="">
+  <fieldset>
+    <legend><strong><em>PERSONAL DATES</em></strong></legend>
+    <p>
+      <label for="cedula">ID &nbsp;&nbsp;</label>
+      <input type="text" name="cedula" id="cedula" minlength="10" maxlength="10" size="25" autofocus required>
+    </p>
+    <p>
+      <label for="nombres">NAMES</label>
+      <input type="text" name="nombres" id="nombres" size="25">
+    </p>
+    <p>
+      <label for="fechanacimiento">BIRTHDAY</label>
+      <input type="date" name="fechanacimiento" id="fechanacimiento" min="2000-01-01" max="2022-11-31" required size="25">
+    </p>
+    <p>
+      <label for="ecivil">MARITAL STATUS</label>
+      <select name="ecivil" id="ecivil">
+        <option value="s">single</option>
+        <option value="c">married</option>
+        <option value="d">divorced</option>
+        <option value="v">widower</option>
+      </select>
+    </p>
+      <table width="100%" border="0">
+        <tr>
+        <td width="32%" align="center"><strong>GENER</strong></td>
+        <td width="68%"><label>
+          <input type="radio" name="Genero" value="m" id="Genero_0">
+          Male<br>
+          <input type="radio" name="Genero" value="f" id="Genero_1">
+		  Feminine</label>
+          <br>
+          <label>
+          <input type="radio" name="Genero" value="o" id="Genero_2">
+          Other</label>
+          <br>
+         </td>
+      </tr>
+  </table>
+
+    </fieldset>
+    
+    <fieldset>
+      <legend><em><strong>GENERAL DATES</strong></em></legend>
+      <p>
+        <label for="direccion">Direction</label>
+        <textarea name="direccion" cols="40" rows="1" required id="direccion" placeholder="Provincia/Parroquia/Sector/Calles" 			         maxlength="500">
+        </textarea>
+      </p>
+      <p>
+        <label for="telefono">Number</label>
+        <input title="El numero debe empezar por 09*(Ecuador)*" type="tel" name="telefono" id="telefono" required minlength="10"          maxlength="10" pattern="[0]{1}[9]{1}[0-9]{8}" size="24" >
+      </p>
+      <p>
+        <label for="email">Email &nbsp;&nbsp; </label>
+        <input type="email" name="email" id="email" required pattern=       	"^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" size="32">
+      </p>
+   
+    </fieldset>
+      
+      </fieldset>
+   <fieldset>    
+  <input name="send" type="submit" value="Send">
+  <input name="reset" type="reset" value="Delete">
+   </fieldset>
+    </form></td>
+  </tr>
+</table>
+</body>
+</html>

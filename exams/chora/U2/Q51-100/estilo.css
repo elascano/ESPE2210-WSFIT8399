@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-color: #8AB7DC ;
+}
+		
+a{
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+		
+h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: 	#000080;
+}
+		
+a:link{
+	color: #0B1014;
+}
+		
+a:visited{
+	color: #0B1014 ;
+}
+		
+a:hover{
+	color: #0B1014;
+}
+
+button{
+			padding-left: 13px;
+			padding-right: 13px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 8px;
+			color: black;
+    		background-color: #87CEFA;
+			cursor: pointer;
+		}
+
+form{
+	padding: 25px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+}
