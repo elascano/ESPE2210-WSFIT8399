@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		body{
+			background-color: #F9EBEA;
+		}
+		
+		a{
+			text-decoration: none;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		
+		h1{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			color: #763c28;
+		}
+		
+		a:link{
+			color: #696969;
+		}
+		
+		a:visited{
+			color: #696969;
+		}
+		
+		a:hover{
+			color: #302431;
+		}
+	</style>
+<meta charset="utf-8">
+<title>AM | Compras</title>
+<link rel="icon" type="image/x-icon" href="img/logo2.png">
+</head>
+
+<body>
+	<header>
+		<div align="left">
+			<a href="Index.html"><img src="img/logo2.png" alt="Logo" width="250" height="120"></a>	<!--- INSERTAR LOGO --->
+		</div>
+		<div align="right">
+			<a href="registrarse.html">Sing In</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="iniciar.html">Log In</a>
+		</div>
+	</header>
+		
+	<h1 align="center">ARTES & MUEBLES</h1> <!--- TITULO --->
+
+		
+<div align="center">	<!--- DIV PARA CENTRAR --->
+	<table width="1089" height="41.6" border="0">	<!--- SE INSERTA UNA TABLA --->
+	  <tbody>
+		<tr>
+		  <td> <p align="center"><a  href="Index.html">INICIO</a></p></td>	
+
+		  <td> <p align="center"><a href="Producto.html">PRODUCTOS</a></p></td>
+
+		  <td> <p align="center"><a href="contacto.html">CONTACTO</a></p></td>
+	
+		  <td> <p align="center"><a href="asesoria.html">ASESORIA</a></p></td>
+
+		  <td> <p align="center"><a href="Empresa.html">QUIENES SOMOS</a></p></td>
+		</tr>
+	  </tbody>
+	</table>
+</div>
+
+	<br><br><br><br>
+
+
+<center>
+	<table width="401" border="1">
+	  <tr>
+		<td>
+		  <form name="form1" method="get" >
+			<p align="center">SHOPPING</p>
+
+			  <p><b>Product dates</b></p>
+
+			  <label for="idproducto">ID product</label>
+			  <input type="text" name="idproducto" id="idproducto">
+			  
+			  <p>
+				<b>Type of furniture:</b>
+			  </p>
+
+			  <label>
+				<input type="radio" name="tipo" value="bedroom" id="tipo_1">
+			  	Bedroom
+			  </label><br>
+				
+			  <label>
+				<input type="radio" name="tipo" value="kitchen" id="tipo_2">
+				Kitchen
+			  </label><br>
+				
+			  <label>
+				<input type="radio" name="tipo" value="room" id="tipo_3">
+				Living room
+			  </label><br>        
+
+
+			  <p>
+			   <label for="fprox">Date: </label>
+			   <input type="date" name="compra" id="compra">
+			  </p>
+
+			  <p>
+			  <label for="cantidad">Amount</label>
+			  <input type="number" name="cantidad" id="cantidad">
+			  <br>
+			  </p>
+			  
+			  <p>
+				  <label for="envio">Delivery type</label>
+				  <select name="envio" id="ecivil2">
+					<option value="dm">At home</option>
+					<option value="se">Staff</option>
+					<option value="ea">Agency withdrawal</option>
+					<option value="ep">Shipping to Province</option>
+				  </select>
+		  	  </p>
+			  
+				<b>Payment Methods</b>
+			<p>
+			  <label for="pago">Enter payment methodo</label>
+			  <select name="pago" id="pago" >
+				<option value="pe">Cash</option>
+				<option value="pt">Credit card</option>
+				<option value="pd">Deposit</option>
+				<option value="pd">Transfer</option>
+			  </select>
+			</p>
+			  
+			<p>
+			  <label for="email2">Email</label>
+			  <input type="email" name="email" id="email">
+			</p>
+
+
+			<b>BILLING DATA</b>
+			  
+			<p>
+		   		<label for="descripcion">Description of delivered products: </label>
+		  	 	<input type="text" name="descripcion" id="descripcion">
+			</p>
+			  
+			<p>
+			  <label for="cantidadtotal">Amount to be paid</label>
+			  <input type="number" name="cantidadtotal" id="cantidadtotal"><br>
+			</p>
+
+		    <p>
+			  <input name="send" type="submit" value="Enviar">
+			  <input name="reset" type="reset" value="Borrar">
+		    </p>
+			  
+	  	  </form>
+	  	</td>
+	  </tr>
+	</table>
+</center>
+	
+		<br><br><br><br>
+
+
+		<footer align="center">
+			<a target="_blank"  href="https://www.facebook.com/artemueblesByronC44TSBC"><img src="imagenes/facebook.png" alt="Logo" width="20" height="20"></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a target="_blank"  href="https://www.instagram.com/artes_muebles.ec/"><img src="imagenes/instagram.png" alt="Logo" width="20" height="20"></a>
+		</footer>
+	
+</body>
+	
+	
+</html>
