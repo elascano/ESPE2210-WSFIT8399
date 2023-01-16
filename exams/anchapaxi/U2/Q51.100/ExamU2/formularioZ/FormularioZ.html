@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Underated EC</title>
+</head>
+
+<body>
+    <center>
+        <td><img src="img/UnderratedLogo.png" alt="Girl in a jacket" width="100" height="100"></td>
+        <h1>
+            <font face="Bahnschrift Light" size="10" color="#840C46">UnderatedEc</font>
+        </h1>
+        <h2> Productos</h2>
+        <hr size="5"> 
+        <form method="get">
+            <table cellpadding="8" width="20%">
+                <h3>ZAPATILLAS</h3>
+                </caption>
+                <caption>Ingrese los datos para su compra:</caption>
+                <tr>
+                    <td><label for="Nombre">Nombre:</label></td>
+                    <td><input type="text" id="Nombre" name="Nombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="Apellido">Apellido:</label></td>
+                    <td><input type="text" id="Apellido" name="Apellido"></td>
+                </tr>
+                <tr>
+                    <td><label for="Tipo">Elija el modelo de zapatillas:</label></td>
+                    <td><select name="select">
+                            <option value="Hombre" selected>Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Niño">Niño</option>
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label for="Diseño">Elija el diseño de zapatillas:</label></td>
+                    <td><input type="radio" checked id="Deportivo" name="Diseño" value="d">
+                        <label for="Deportivo">Deportivo</label><br>
+                        <input type="radio" id="Casual" name="Diseño" value="c">
+                        <label for="Casual">Casual</label><br>
+                        <input type="radio" id="Formal" name="Diseño" value="f">
+                        <label for="Formal">Formal</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Diseño">Escoja la marca:</label></td>
+                    <td><select id="Marca" name="Marca" size="3">
+                            <option value="nike">Nike</option>
+                            <option value="adidas">Adidas</option>
+                            <option value="puma">Puma</option>
+                            <option value="new balance">New Balance</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Talla">Escoja la talla:</label></td>
+                    <td><input type="checkbox" name="36">
+                        <label for="36">36</label><br>
+                        <input type="checkbox" name="38">
+                        <label for="38">38</label><br>
+                        <input type="checkbox" name="40">
+                        <label for="40">40</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pago">Forma de pago:</label></td>
+                    <td><input type="radio" checked id="efectivo" name="Pago" value="e">
+                        <label for="efectivo">efectivo</label><br>
+                        <input type="radio" id="crédito" name="Pago" value="c">
+                        <label for="crédito">crédito</label><br>
+                        <input type="radio" id="transferencia" name="Pago" value="t">
+                        <label for="transferencia">transferencia</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" onclick="alert('Datos guardados!')" value="aceptar" name="aceptar"></td>
+                    <td><input type="reset" value="cancelar" name="cancelar"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

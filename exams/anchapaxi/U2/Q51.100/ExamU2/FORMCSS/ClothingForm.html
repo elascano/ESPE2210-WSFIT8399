@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Underated EC</title>
+  
+</head>
+
+<body>
+    <center>
+        <h1>
+            <font face="Bahnschrift Light" size="10" color="#840C46">UnderatedEc</font>
+        </h1>
+        <h2> Productos</h2>
+        <hr size="5">
+        <form method="get">
+            <table cellpadding="10" width="10%">
+                <h3>ROPA</h3>
+                </caption>
+                <caption>Ingrese los datos para su compra:</caption>
+                <tr>
+                    <td><label for="Nombre">Nombre:</label></td>
+                    <td><input type="text" id="Nombre" name="Nombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="Apellido">Apellido:</label></td>
+                    <td><input type="text" id="Apellido" name="Apellido"></td>
+                </tr>
+                <tr>
+                    <td><label for="Diseño">Elija el género:</label></td>
+                    <td><input type="radio" checked id="Deportivo" name="Diseño" value="d">
+                        <label for="Deportivo">Hombre</label><br>
+                        <input type="radio" id="Casual" name="Diseño" value="c">
+                        <label for="Casual">Mujer</label><br>
+                </tr>
+                <tr>
+                    <td><label for="Tipo">Elija el tipo de prenda:</label></td>
+                    <td><select name="select">
+                            <option value="Chompa" selected>Chompa</option>
+                            <option value="Camiseta">Camiseta</option>
+                            <option value="Vividi">Vividi</option>
+                            <option value="Licra">Licra</option>
+                            <option value="Pantalón">Pantalón</option>
+                            <option value="Pantaloneta">Pantaloneta</option>
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label for="Diseño">Escoja la marca:</label></td>
+                    <td><select id="Marca" name="Marca" size="3">
+                            <option value="nike">NIKE</option>
+                            <option value="adidas">ADIDAS</option>
+                            <option value="puma">PUMA</option>
+                            <option value="under armour">UNDER ARMOUR</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Talla">Escoja la talla:</label></td>
+                    <td><input type="checkbox" name="S">
+                        <label for="S">S</label><br>
+                        <input type="checkbox" name="S">
+                        <label for="M">M</label><br>
+                        <input type="checkbox" name="L">
+                        <label for="L">L</label><br>
+                        <input type="checkbox" name="XL">
+                        <label for="XL">XL</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pago">Forma de pago:</label></td>
+                    <td><input type="radio" checked id="efectivo" name="Pago" value="e">
+                        <label for="efectivo">Efectivo</label><br>
+                        <input type="radio" id="crédito" name="Pago" value="c">
+                        <label for="crédito">Crédito</label><br>
+                        <input type="radio" id="transferencia" name="Pago" value="t">
+                        <label for="transferencia">Transferencia</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="ASceptar" name="Aceptar"></td>
+                    <td><input type="reset" value="Cancelar" name="Cancelar"></td>
+  
+              
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
