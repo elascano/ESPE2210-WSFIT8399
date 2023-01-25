@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta characters="UTF-8">
+    <meta name="viewport" content="width=device-wisth, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<title> BuyForm</title>
+
+<body>
+    <form>
+        <div class="img">
+        </div>
+        <section class="form-register">
+            <img src="Logo.jpg"
+                width="345px" height="100">
+            <h1 align="center">BUY TRUCK</h1>
+            <h2>Customer information</h2>
+            <br>
+            ID <input class="controls" type="text" name="ID" id="Fname" placeholder="Ej: 1752373140">
+            Name <input class="controls" type="text" name="Fname" id="Fname" placeholder="Michelle">
+            Last name <input class="controls" type="text" name="Surname" id="Surname" placeholder="Cumbal">
+            <td><label for="genero">Gender</label><br></td>
+            <td><input type="radio" genero="male" name="genero" value="Hombre">
+                <label for="male">Men</label><br>
+                <input type="radio" genero="female" name="genero" value="Mujer">
+                <label for="female">Women</label><br>
+                <input type="radio" genero="none" name="genero" value="Otro">
+                <label for="none">Other</label><br>
+            </td>
+            <br>
+            Date of birth <input class="controls" type="date" name="Birthday" id="Number">
+            Cell phone number <input class="controls" type="text" name="Number" id="Number" placeholder="0969854125">
+            Email<input class="controls" type="text" name="Email" id="Email"
+                placeholder="Ej: name@gmail.com">
+
+            <h2>Product data (Purchase)</h2>
+            <br>
+            Truck names
+            <select>
+                <option>Seleccionar</option>
+                <option>Dry Type Load</option>
+                <option>Heavy</option>
+                <option>Containers</option>
+                <option>Bulk</option>
+                <option>Liquids</option>
+                <option>Gasese</option>
+                <option>Chimicals</option>
+            </select>
+            <br>
+            <br>Truck types
+            <select>
+                <option>Selecionar</option>
+                <option>Truck</option>
+                <option>Trailer</option>
+                <option>Articulated trailer</option>
+                <option>Tank</option>
+                <option>Stakes</option>
+                <option>Cooled</option>
+                <option>Tipper</option>
+                <option>Low bed</option>
+                <option>Platform</option>
+            </select>
+            <br>
+            <br>Retirement date <input class="controls" type="date" name="Birthday" id="Number">
+            <br>Pick up time <input class="controls" type="datetime" name="Birthday" id="Number">
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">I accept <a href="#">accept terms and conditions.</a></label>
+            </div>
+
+            <table width="100%">
+                <td align="center">
+                    <input class="buttons" type="submit" value="To buy" width="25">
+                    <input class="buttons" type="reset" value="Reset" width="40">
+                </td>
+            </table>
+
+        </section>
+
+    </form>
+</body>
+
+</html>

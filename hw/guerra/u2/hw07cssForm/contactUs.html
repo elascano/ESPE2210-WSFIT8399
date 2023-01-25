@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Contac Us </title>
+        <meta charset="Utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/Styles.css" rel="stylesheet" type="text/css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            
+            /* para 980px o menos */
+            @media screen and (max-width:980px) {
+                .container {
+                    width:98%;
+                }
+                section {
+                    width:68%;
+                }
+            }
+         
+            /* para 700px o menos */
+            @media screen and (max-width:700px) {
+                aside,section {
+                    float:none;
+                    width:96%;
+                }
+                nav, section {
+                    font-size:1.2em;
+                }
+                aside {
+                    margin-top:5px;
+                }
+                nav ul {
+                    float:none;
+                    clear:both;
+                }
+            }
+         
+            /* para 480px o menos */
+            @media screen and (max-width:480px) {
+                aside {
+                    display:none;
+                }
+                nav, section {
+                    font-size:1.5em;
+                }
+                section {
+                    width:94%;
+                }
+                nav ul {
+                    float:left;
+                    clear:none;
+                    width:50%;
+                }
+                nav ul li {
+                    float:none;
+                }
+            }
+            </style>
+    </head>
+    <body>
+        <div>
+
+            
+        <nav>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <a href="../06Code/principalpage.html">
+                            <img src="../HW06css/images/logoprincipal.png" width="80" alt="Luastore logo">
+                        </a>
+                    </td>
+                    <td align="left">
+                        <h4>LUA STORE</h4>
+                    </td>
+                    <td align="right">
+                        <button>
+                            <a href="../06Code/aboutus.html">About Us</a>
+                        </button>
+                        <button>
+                            <a href="../06Code/products.html">Products</a>
+                        </button>
+                        <button>
+                            <a href="../06Code/collection.html">Collections</a>
+                        </button>
+                        <button>
+                            <a href="../06Code/forms.html">Buy</a>
+                        </button>
+                    </td>
+                    <td align="right" >
+                        <label >Search</label>
+                        <input style="border-radius: 10px;" type="text" >
+                    </td>
+                </tr>
+            </table>
+        </nav> <br>
+    </div>
+
+    
+        <section class="contactUs">
+            <h4 align="center">Contact Us </h4>
+            <form method="get" action="">
+            Name <input class="controls" type="text" name="name" id="name" placeholder="Carlos">
+            Lastname <input class="controls" type="text" name="lastname" id="lastname" placeholder="Rojas">
+            Email <input class="controls" type="text" name="email" id="email" placeholder="carlos@gmail">
+            Telephone <input class="controls" type="text" name="telephone" id="telephone" placeholder="093902457">
+          
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">I agree with <a href="#">Terms and Condition.</a></label>
+              </div>
+
+              <input class="buttons " type="submit" value="Save">
+
+        </form>
+        </section>
+    </body>
+
+</html>
+    
