@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#FFFFFF;
+	
+	
+	}
+#apDiv1{
+	background-color:#666;
+	
+	}
+
+#apDiv3{
+	background-image:url(../img/logo1.PNG);
+	}
+	#apDiv4{
+border: 4px solid #1C6EA4;
+border-radius: 40px 40px 34px 35px;
+text-align:center;
+font-size:200%;
+	
+	}
+#apDiv6{
+	background-image: url(img/imgage2.jpg);
+}
+#parrafo1{
+	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0);
+color: #F8FFFD;
+border-color:#000;
+font-size:300%;
+
+	}
+#parrafo2{
+	color:#FFF;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:90%;
+	
+	}
+	#apDiv8{
+		
+		background-color:#F60;
+		text-align:center;
+		color:#FFF;
+		}
+	#apDiv9{
+		
+border-color:#FFF;
+color:#FFF;
+text-align:center;
+border: 2px solid #FFF;
+		}
+#apDiv10{
+	background-color:#F60;
+	color:#FFF;
+font-size:130%;
+text-align:center;
+	
+	}
+	#apDiv11{
+			background-color:#F60;
+		text-align:center;
+		color:#FFF;
+		border: 2px solid #FFF;
+		}
+#apDiv12{
+background-image:url(../img/comp1.jpg);
+}
+#apDiv13{
+	background-image:url(../img/comp2.jpg);
+	
+		}
+		
+#apDiv14{
+	background-image:url(../img/comp3.jpg);
+}
+
+
+	h2{
+		text-align:center;
+		}	
+p{text-align:center;
+	}
+	#apDiv19{
+		background-image:url(../img/comp4.jpg);
+		}
+#apDiv22{
+	background-image:url(../img/comp5.jpg);
+		}
+#apDiv23{
+	background-image:url(../img/comp1.jpg);
+		}
+		
+.btn-flotante {
+	font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #E91E63; /* Color de fondo */
+	padding: 18px 30px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.btn-flotante:hover {
+	background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+#apDiv27{
+	background-color:#404040;
+	
+	}
+h1{
+	color:#FFF;
+	font-size:250%;
+	
+	}
+P1{
+	color:#F60;
+	}
+#apDiv29{
+	background-image:url(../img/comp6.jpg);
+	}
+#apDiv30{
+	background-image:url(../img/comp7.jpg);
+	}
+#apDiv31{
+	background-image:url(../img/comp8.jpg);
+	}
+#apDiv32{
+
+background-image:url(../img/comp6.jpg);
+	}
+p3{
+	font-size:300%;
+	}
+#apDiv35{
+
+background-image:url(../img/traba1.jpg);
+	}
+	#apDiv36{
+
+background-image:url(../img/traba2.jpg);
+	}
+	#apDiv37{
+
+font-size:150%;
+text-align:justify;
+color:#999;
+	}

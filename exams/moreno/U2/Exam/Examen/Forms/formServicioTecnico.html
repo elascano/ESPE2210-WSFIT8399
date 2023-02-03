@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<hmtl>
+
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+        <link href="../CSS/Styleserviciotecnico.css " rel="stylesheet" type="text/css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms Servicio Tecnico</title>
+    </head>
+
+    <body>
+        <header id="main-header">
+            <a>
+                <img src="../images/logo.jpg">
+
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="regresar" href="../index.html">Home</a></li>
+            </nav>
+        </header>
+        <section class="form_servicio_tecnico">
+            <form method="get ">
+                <h4>Servicio Tecnico</h4>
+                <div>
+                    <center><label>is client?</label> <br>
+                        No <input type="radio" id="no" name="cliente" value="No" checked>
+                        Si<input type="radio" id="si" name="cliente" value="Si"> <br> <br>
+                    </center>
+                </div>
+                <div>
+                    CI:<input class="controls" type="text" id="txtId" name="txtId"
+                        placeholder="Ingerese su Cedula">
+                </div>
+                <div>
+                    name:<input class="controls" type="text" id="txtfullName" name="txtfullName"
+                        placeholder="Ingrese su Nombre">
+                </div>
+                <div>
+                    Email:<input class="controls" type="text" id="txtemail" name="E-mail"
+                        placeholder="users@example.com">
+                </div>
+                <div>
+                    Date:<input class="controls" type="date" id="txtDate" name="Date">
+                </div>
+                <div>
+                    location:
+
+                    <select id="location" name="location">
+                        <option value"Carcelen">Carcelen</option>
+                        <option value"Inca">Inca</option>
+                        <option value"Guamani">Guamani</option>
+                        <option value"Ecuatoriana">Ecuatoriana</option>
+
+                    </select>
+                </div>
+                <div>
+                    Descripción:<textarea class="controls" name="description" id="descripcion"
+                        placeholder="¿Cual es el problema?" style="height:200px"></textarea></textarea>
+                </div>
+                <div>
+                    <center>
+                        <input class="button" type="submit" value="Enviar"> <input class="button" type="reset"
+                            value="Reset">
+                    </center> <br>
+                </div>
+            </form>
+
+        </section>
+
+    </body>
+</hmtl>

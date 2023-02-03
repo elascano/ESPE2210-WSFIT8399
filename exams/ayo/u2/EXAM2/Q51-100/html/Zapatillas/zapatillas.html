@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<title>Computer Store</title>
+</head>
+
+<body>
+<table cellpadding="15" width="100%">
+  <tr>
+    <td><img src="../../img/logo.png" width="166" height="157" alt=""/></td>
+    <td><h1>Computer Store</h1></td>
+    <td><p><input type="text" placeholder="Buscas Algo ...?"></td>
+  </tr>
+</table>
+<hr>
+<center>
+<table cellpadding="15" width="200" border="0">
+  <tbody>
+    <tr>
+      <th scope="col"><a href="../../Index.html">Home</a></th>
+      <th scope="col"><a href="zapatillas.html">Buy Computers</a></th>
+      <th scope="col"><a href="../Contactanos/Contactanos.html">Contact US</a></th>
+
+    </tr>
+  </tbody>
+</table>
+</center>
+	<hr>
+  <p align="center">Technology products store<br>
+  <center>
+    <br>
+  <h1>Modelos disponibles</h1>
+<table width="200" border="0">
+    <tr>
+        <td><img src="img/laptop1.jpg" width="300" height="200" alt=""></td>
+        <td><img src="img/laptop2.png" width="300" height="200" alt=""></td>
+        <td><img src="img/laptop3.png" width="300" height="200" alt=""></td>
+        <td><img src="img/laptop4.png" width="300" height="200" alt=""></td>
+    </tr>
+    <tr>
+        <td>Modelo 1</td>
+        <td>Modelo 2</td>
+        <td>Modelo 3</td>
+        <td>Modelo 4</td>
+    </tr>
+</table>
+
+  <h1>Realizar una compra</h1>
+  <br>
+  <form method="get">
+    <center>
+        <table>
+            <caption></caption>
+            <tr>
+                <td><label for="name">NAME:</label></td>
+                <td><input type="text" name="usuario" id="usuario" pattern="^([A-Za-z]+)$" required/></td>
+            
+            </tr>
+            <tr>
+                <td><label for="name">LAST NAME:</label></td>
+                <td><input type="text" name="usuario" id="usuario" pattern="^([A-Za-z]+)$" required/></td>
+        
+            </tr>
+
+            <tr>
+                <td><label for="id">ID:</label></td>
+                <td><input type="text" pattern="[0-9]+" maxlength="10" minlength="10" required/></td>
+            </tr>
+
+            <tr>
+                <td><label for="mail">GMAIL:</label></td>
+                <td><input type="email" id="mail" name="use_mail" required/></td>
+            </tr>
+            <tr>
+                <td><label for="ID">PHONE NUMBER:</label></td>
+                <td><input type="tel" pattern="[0-9]+" maxlength="10" id="phone" minlength="10"name="phone" required/></td>    
+              </tr>
+            <tr>
+                <td><label for="gender">GENDER:</label></td>
+                <td><input type="radio" id="male" name="gender" value="M" required/>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="F" required/>
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="none" name="gender" value="N" required/>
+                    <label for="none">None</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="service">RECORD THE DATE:</label></td>
+                <td><input type="date" name="date" id="date" required="required"/></td>
+               </tr>
+            <tr>
+                <td><label for="Diseño" >Computers Brand:</label></td>
+                <td><select id="Marca" name="Marca" size="6" required>
+                        <option value="nike">HP</option>
+                        <option value="nike">Lenovo </option>
+                        <option value="nike">Asus </option>
+                        <option value="adidas">Dell</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="shoe model">Computers MODEL:</label>
+                <td><select name="shoe model" id="shoe model" required>
+                  <option value="Nike Basketball KB7">Hp Pavillion</option>
+                  <option value="Nike Basketball Air Jordan 11">Lenovo Yoga</option>
+                  <option value="Nike Basketball Kyrie Irving 9">Asus Gamming</option>
+                  <option value="Nike Soccer Mercurial 8">Dell 9</option>
+                  <option value="Nike Soccer Phantom GT">Lenovo 5</option>
+
+                </select>
+                <br><br>
+                </td>
+
+                <tr>
+                    <td><label for="size">Capacity:</label></td>
+                    <td><input type="radio" id="6" name="size" value="6" required/>
+                        <label for="6">256 GB</label>
+                        
+                        <input type="radio" id="7" name="size" value="7" required/>
+                        <label for="7">512 GB</label>
+                        
+                        <input type="radio" id="8-5" name="size" value="8" required/>
+                        <label for="8"> 1TB</label>
+                        
+                        <input type="radio" id="9" name="size" value="9" required/>
+                        <label for="9">2 TB</label>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Pago">FORM OF PAYMENT:</label></td>
+                    <td><input type="radio" id="efectivo" name="Pago" value="e" required/>
+                        <label for="efectivo">Cash</label><br>
+                        <input type="radio" id="crédito" name="Pago" value="c" required/>
+                        <label for="crédito">Credit</label><br>
+                        <input type="radio" id="transferencia" name="Pago" value="t" required/>
+                        <label for="transferencia">Transfer</label><br>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td><input type="submit" value="SEND"></td>
+                <td><input type="reset" value="RESEND"></td>
+
+            </tr>
+        </table> 
+    </center> 
+    </form >
+
+</body>
+</html>
