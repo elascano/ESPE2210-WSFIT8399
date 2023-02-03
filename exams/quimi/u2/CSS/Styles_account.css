@@ -1,4 +1,4 @@
-/* CSS FORMS CAMERAS */
+/* CSS FORMS CREATE AN ACCOUNT */
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body{
-  background-image: url(../images/fondo3camera.jpg);
+  background-image: url(../Imagen/fondo.jpg);
   background-size: cover;
 }
 
@@ -48,7 +48,7 @@ body{
   .col-12 {width: 100%;}
 }
 
-.form-camaras-seguridad{
+.form-create-accound{
     width: 400px;
     background: #9dc8e4;
     padding: 30px ;
@@ -59,7 +59,7 @@ body{
     color: rgb(27, 26, 26);
     box-shadow: 7px 13px 37px #000;
 }
-.form-camaras-seguridad h4{
+.form-create-accound h4{
     font-size: 22px;
     margin-bottom: 20px;
 }
@@ -102,17 +102,17 @@ textarea {
     line-height: 40px;
   }
   
-  .form-create-accound a {
+.form-create-accound a {
     color: rgb(20, 20, 20);
     text-decoration: none;
   }
   
-  .form-create-accound a:hover {
+.form-create-accound a:hover {
     color: rgb(22, 22, 22);
     text-decoration: underline;
   }
   
-  .form-create-accound.button {
+.form-create-accound.button {
     width: 30%;
     background: #1f53c5;
     border: none;
@@ -122,7 +122,7 @@ textarea {
     font-size: 16px;
   }
 
-  img {
+img {
     height: 80px;
     width: 80px;
 }
