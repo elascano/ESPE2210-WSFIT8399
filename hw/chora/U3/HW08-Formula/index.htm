@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Widgets By Liliana Chora </title>
+</head>
+
+<body>
+    <h1> My Calculator By Liliana Chora  </h1>
+    <div class="segment">
+        <form action="">
+            <hr>
+            <label for="number1">number1:</label>
+            <input type="number1" name="number1" id="number1" step="0.01" min="0" max="100">
+            <br>
+            <label for="number2">number2:</label>
+            <input type="number2" name="number2" id="number2" step="0.01" min="0" max="100">
+            <br>
+            <input  type="submit" name="div" id="div" value=" / "onclick="compute('divivir'); return false;" />
+           
+
+            </hr>
+
+        </form>
+    </div>
+
+    
+    <script>
+        var number1 = parseFloat(document.getElementById('number1').value);
+        var number2 = parseFloat(document.getElementById('number2').value);
+        
+
+        var div= number1 / number2;
+    </script>
+
+    <script>
+        function compute() {
+            var number1 = parseFloat(document.getElementById('number1').value);
+            var number2 = parseFloat(document.getElementById('number2').value);
+            
+            var div= number1 / number2;
+            
+            alert("The div is  :" + number1 + " / " + number2 + "  is--> " + div);
+        }
+    </script>
+</body>
+</html>
