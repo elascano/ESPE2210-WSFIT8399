@@ -1,0 +1,38 @@
+<p>Cristian Idrobo - HW08</p>
+
+<div class="segment">
+    <form action="">
+        <hr>
+        <label for="addend1">CoordX1</label>
+        <input type="number" name="CoordX1" id="CoordX1" step="0.01" min="0" max="100">
+        <br>
+        <label for="addend1">CoordX2</label>
+        <input type="number" name="CoordX2" id="CoordX2" step="0.01" min="0" >
+        <br>
+        <label for="addend1">CoordY1</label>
+        <input type="number" name="CoordY1" id="CoordY1" step="0.01" min="0" >
+        <br>
+        <label for="addend1">CoordY2</label>
+        <input type="number" name="CoordY2" id="CoordY2" step="0.01" min="0" >
+        <br>
+    
+        <input type="submit" name="slope" id="slope" value="Result" onclick="computeSlope();">
+        
+        <br>
+    </form>
+</div>
+
+
+<script>
+    function computeSlope(){
+        var CoordX1= parseFloat(document.getElementById('CoordX1').value);
+        var CoordX2= parseFloat(document.getElementById('CoordX2').value);
+        var CoordY1= parseFloat(document.getElementById('CoordY1').value);
+        var CoordY2= parseFloat(document.getElementById('CoordY2').value);
+
+        var sum = ((CoordY2-CoordY1)/(CoordX2-CoordX1));
+
+        alert("The slope of a line is --->"  + sum )
+
+    }
+</script>
