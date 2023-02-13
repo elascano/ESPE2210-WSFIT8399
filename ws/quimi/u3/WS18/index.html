@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width">
+    <title>Conditional example: Toggle Botton</title>
+</head>
+
+<body>
+    <h1>Toggle Botton By Lizeth Quimi</h1>
+ 
+    <br>
+    <button>Start</button>
+    <p>The car is stopped.<p>
+</body>
+
+
+
+    <script>
+        const btn = document.querySelector('button');
+        const txt = document.querySelector('p');
+
+        btn.addEventListener('click', updateBtn);
+
+        function updateBtn() {
+            if (btn.textContent === 'Start'){
+                btn.textContent = 'Stop engine';
+            txt.textContent = 'The car has started!';
+
+            }else{
+                btn.textContent = 'Start';
+                textContent = 'The car is stopped';
+            }   
+        }
+        
+
+    </script>
+
+
+</html>

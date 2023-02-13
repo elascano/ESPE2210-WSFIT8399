@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(169, 214, 197);
+    background-color: rgb(206, 221, 233);
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -11,13 +11,13 @@ body {
 }
 
 header {
-    background: rgb(23, 24, 24);
-    color: rgb(48, 32, 13);
-    height: 80px;
-    /*width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página 
-	left: 0; /* Posicionamos la cabecera al lado izquierdo 
-	top: 0; /* Posicionamos la cabecera pegada arriba 
-	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    background: rgb(105, 135, 176);
+    color: rgb(254, 254, 254);
+    padding: 2rem 0;
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 #regresar {
@@ -38,30 +38,35 @@ h1 {
     font-weight: 300;
 }
 
-nav {
-    float: right;
+.menu-icon{
+    display: none;
 }
+
+.navigation{
+    width: 100%;
+}
+
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-right: 20px;
+    
 }
 
 nav ul li {
     display: inline-block;
-    line-height: 80px;
 }
 
 nav ul li a {
     display: block;
-    padding: 0 10px;
-    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background: #0b76a6;
+    background: #f58f1d;
 }
 
 #main-footer {
@@ -150,7 +155,7 @@ table.tableContent{
 
 
 .fondotitle {
-    background: url(../Imagen/Logo.png) ;
+    background: url(../Imagen/bank.jpg) ;
     padding: 1px;
 }
 

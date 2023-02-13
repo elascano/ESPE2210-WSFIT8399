@@ -2,6 +2,5 @@
 ## ESPE 2022 10 
 ### Web Systems Fundamentals  IT 8399
 #### Instructor: Edison Lascano
-
-#### Student: Karla Guayasamin
-#### WSF  exams
+#### Student: Nayeli Tipantiza
+#### WSF unit 3 assignments

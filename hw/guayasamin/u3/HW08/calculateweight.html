@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weight / Karla Guayasamint</title>
+</head>
+
+<body>
+    <div class="segment">
+        <form action="">
+            <h2>Here we can calculate the weight for dinamica in physics</h2>
+            <hr>
+            <p>The formula of weight is p=m*g:</p>
+            <label for="weight">The mass is:</label>
+            <input type="number" name="mass" id="mass" step="0.01" min="0" max="100">
+            <br>
+            <label for="gravity">The gravity is:</label>
+            <input type="number" name="gravity" id="gravity" min="9.8" max="9.8" value="9.8">
+            <br>
+            <input type="submit" name="multiply" id="multiply" value=" calculate " onclick="computeMultipliying();">
+            <hr>
+        </form>
+    </div>
+
+    <script>
+        function computeMultipliying() {
+            var mass = parseFloat(document.getElementById('mass').value)
+            var gravity = parseFloat(document.getElementById('gravity').value)
+
+            var mul = mass * gravity;
+
+            alert("The calculated weight is p= " + mass + " * " + gravity + " is --> " + mul);
+        }
+    </script>
+</body>
+
+</html>
