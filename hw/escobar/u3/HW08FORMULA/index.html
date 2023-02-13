@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <hr />
+    <h1>Time Calculation by Juliana</h1>
+    <hr />
+
+    <div>
+        <form action="">
+            <hr>
+            <label for="finalspeed">Final Speed:</label>
+            <input type="number" name="finalspeed" id="finalspeed" step="0.01" min="0" max="100">
+            <br>
+            <label for="acceleration">Acceleration:</label>
+            <input type="number" name="acceleration" step="0.01">
+            <br>
+            <input type="submit" name="add" id="add" value=" Time Calculation " onclick="computeMultiplying();">
+        </form>
+    </div>
+
+    <script>
+        function computeMultiplying(){
+            var finalspeed = parseFloat(document.getElementById('finalspeed').value);
+            var acceleration = parseFloat(document.getElementById('acceleration').value);
+
+            var time = finalspeed / acceleration;
+
+            alert("The time calculation of " + finalspeed + " / " + acceleration + " is --> ",time);
+        }
+    </script>
+</body>
+</html>
