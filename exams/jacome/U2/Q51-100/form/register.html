@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<hmtl>
+
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+        <link href="../CSS/form.css" rel="stylesheet" type="text/css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <header id="main-header">
+            <a>
+                <img src="../img/logo.jpg">
+
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="regresar" href="../index.html">Home</a></li>
+                    <li><a id="regresar" href="../html/Aboutus.html">About Us</a></li>
+                    <li><a id="regresar" href="../form/register.html">Register New Park</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="form_register">
+            <form method="get ">
+                <h4>Park Register</h4>
+                <div>
+                    Park Name:<input class="controls" type="text" id="parkname" name="parkname"
+                    minlength="5" maxlength="40" placeholder="Write the name of the park">
+                </div>
+
+                <div>
+
+                    <div>
+                        Location: <input class="location " list="location" placeholder="Select">
+
+                        <datalist id="location" name="location">
+                            <option value="La Carolina">
+                            <option value="Carcelen">
+                            <option value="Quitumbe">
+
+                        </datalist>
+                    </div>
+                    <div>
+                        In charge::<input class="controls" type="text" id="txtfullName" name="txtfullName"
+                        minlength="5" maxlength="40" placeholder="Write your full name">
+                    </div>
+                </div>
+                <div>
+                    Ability:<input class="controls" type="number" name="cant" id="cant" min="1" required="required" placeholder="Ability">
+                </div>
+                <div>
+                    Phone:<input class="controls" type="text" id="phone" name="phone" size="4"
+                    maxlength="10" required="required" placeholder="Write your phone">
+                </div>
+                    <div>
+                    <center>
+                        <input class="button" type="submit" value="Add"> <input class="button" type="submit"
+                            value="Drop">
+                    </center> <br>
+                </div>
+
+            </form>
+
+        </section>
+
+    </body>
+</hmtl>

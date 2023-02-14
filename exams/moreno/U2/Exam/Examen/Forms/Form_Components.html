@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <link href="../CSS/Styles_Components.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Form_Componentes</title>
+
+    <!----style>
+        body {
+            background-color: rgb(198, 229, 99);
+        }
+    </style-->
+
+</head>
+
+<body>
+    <header id="main-header">
+        <a>
+            <img src="../images/logo.jpg">
+        </a>
+        <nav>
+            <ul>
+                <li><a id="regresar" href="../index.html">Home</a></li>
+                <li><a id="regresar" href="../html/Componentes.html">Buy Shoes</a></li>
+        </nav>
+    </header>
+    <section class="form-Components">
+        <h4><center>Buy Shoes</center></h4>
+        <form method="get">
+            <div>
+                Code of Produt:<input class="controls" type="text" name="code" id="code"
+                                           placeholder="Ingrese codigo">
+            </div>
+            <div>
+                Shoes:
+                <select class="controls" id="marca" name="marca">
+                    <option value"opcion">Seleccione</option>
+                    <option value"CASES-INFNYTEK">Sports</option>
+                    <option value"Coolers-AMD">Boots</option>
+                    <option value"HDD-KINGSTON">Tacos</option>
+                    <option value""></option>
+                </select>
+            </div>
+
+            <div>
+                Color:
+                <select class="controls" id="color" name="color">
+                    <option value"opcion">Seleccione</option>
+                    <option value"Negro">Gray</option>
+                    <option value"Plata">black</option>
+                    <option value"Azul">green</option>
+                </select>
+            </div>
+            <div>
+                Amount:<input class="controls" type="number" name="cantidad" id="cantidad"
+                                placeholder="Ingrese la cantidad">
+                Price:<input class="controls" type="text" name="precio" id="precio" placeholder="Ingrese el precio">
+            </div>
+            <div>
+                <center>
+                    <input class="button" type="submit" value="Buy"> <input class="button" type="Cancel" value="Reset">
+                </center>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

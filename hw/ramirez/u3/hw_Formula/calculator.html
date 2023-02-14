@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lange="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>
+        Complex Widgets
+    </title>
+</head>
+
+<body>
+    
+    <h1>Potential Energy By Angie Ramirez</h1>
+
+    <div class ="segment">
+        <form action="">
+            <hr>
+            <label for="mass">Mass:</label>
+            <input type="number" name="mass" id="mass" step="0.01" min="0" max="100">
+            <br>
+            <label for="gravity">Gravity:</label>
+            <input type="number" name="gravity" id="gravity" step="0.01">
+            <br>
+            <label for="height">Height:</label>
+            <input type="number" name="height" id="height" step="0.01">
+            <br>
+            <input type="submit" name="multiplication" id="multiplication" value=" * "
+                onclick="computeMultiplication();">
+
+        </form>
+    </div>
+
+
+
+    <script>
+        function computeMultiplication() {
+            var mass = parseFloat(document.getElementById('mass').value);
+            var gravity = parseFloat(document.getElementById('gravity').value);
+            var height = parseFloat(document.getElementById('height').value);
+            var PotentialEnergy = mass * gravity * height;
+
+            alert("The Potential Energy of " + mass + " * " + gravity +  "*" + height + "is -->" + PotentialEnergy);
+    }
+
+
+    </script>
+
+</body>
+
+</html>

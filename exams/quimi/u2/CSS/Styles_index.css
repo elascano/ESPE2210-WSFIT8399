@@ -1,0 +1,176 @@
+
+
+body {
+    background-color: rgb(206, 221, 233);
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(15, 15, 15);
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header {
+    background: rgb(105, 135, 176);
+    color: rgb(254, 254, 254);
+    padding: 2rem 0;
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+#regresar {
+    color: rgb(233, 233, 228);
+
+}
+
+.imgLogo {
+    height: 80px;
+    width: 80px;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navigation{
+    width: 100%;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #f58f1d;
+}
+
+#main-footer {
+    background: rgb(23, 24, 24);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#main-footer p {
+    margin: 0;
+}
+
+#main-footer a {
+    color: white;
+}
+
+div.slider {
+	width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 900%;
+
+	animation: cambio 20s infinite alternate;
+}
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+.slider img {
+	width: 95%;
+
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	15% {margin-left: 0;}
+	
+	20% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+	
+	40% {margin-left: -200%;}
+	55% {margin-left: -200%;}
+	
+	60% {margin-left: -300%;}
+	75% {margin-left: -300%;}
+
+	80% {margin-left: -400%;}
+	100% {margin-left: -400%;}
+}
+
+table.tableContent{
+	width: 800px;
+    text-align: center;
+    margin: auto;
+	background-color: #90c3b3;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 8px;
+    font-family: 'calibri';
+}
+
+
+
+.informacion {
+	text-align: center;
+}
+
+.informacion ul {
+	text-align: left;
+	display: inline-block;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.fondotitle {
+    background: url(../Imagen/bank.jpg) ;
+    padding: 1px;
+}
+
+.fondotitle, h1{
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 0px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
