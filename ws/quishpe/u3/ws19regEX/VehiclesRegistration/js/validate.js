@@ -8,8 +8,8 @@ let expressions={
 function validatePlate(){
     let inp = document.getElementById('plate').value;
     if(!(expressions.plate).test(inp)){
-        window.console.alert("Invalid Plate!!")
-        return false
+        window.alert("Invalid Plate!!");
+        return false;
     } else{
         return true;
     }
