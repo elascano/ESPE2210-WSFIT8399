@@ -10,11 +10,11 @@ function validateBrand() {
     let brandError = document.getElementById('brand-error');
   
     if (inp.trim() === '') {
-      brandError.innerText = "Ingrese la marca del auto.";
+      brandError.innerText = "Enter the car brand.";
       brandError.style.display = 'block';
       return false;
     } else if (!brandRegex.test(inp)) {
-      brandError.innerText = "La marca ingresada no es válida. Ingrese una marca válida.";
+      brandError.innerText = "The brand entered is not valid. Please enter a valid brand.";
       brandError.style.display = 'block';
       return false;
     } else {
@@ -31,11 +31,11 @@ function validatePlate() {
     let plateError = document.getElementById('plate-error');
   
     if (inp.trim() === '') {
-      plateError.innerText = "Ingrese la placa del auto.";
+      plateError.innerText = "Enter the car plate.";
       plateError.style.display = 'block';
       return false;
     } else if (!plateRegex.test(inp)) {
-      plateError.innerText = "La placa ingresada no es válida. Ingrese una placa válida en formato ABC1234.";
+      plateError.innerText = "The license plate entered is not valid. Please enter a valid license plate in the format ABC1234.";
       plateError.style.display = 'block';
       return false;
     } else {
@@ -51,11 +51,11 @@ function validatePlate() {
     let modelError = document.getElementById('model-error');
   
     if (inp.trim() === '') {
-      modelError.innerText = "Ingrese el modelo del auto.";
+      modelError.innerText = "Enter the car model.";
       modelError.style.display = 'block';
       return false;
     } else if (!modelRegex.test(inp)) {
-      modelError.innerText = "El modelo ingresado no es válido. Ingrese un modelo válido.";
+      modelError.innerText = "The model entered is not valid. Please enter a valid model.";
       modelError.style.display = 'block';
       return false;
     } else {
