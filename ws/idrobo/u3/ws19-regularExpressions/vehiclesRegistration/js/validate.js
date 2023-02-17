@@ -3,13 +3,68 @@ let expressions={
     onlyLetters: /^[a-zA-Z\s-_\d]{1,30}$/,
     model: /^[a-zA-Z\s.-\d]{1,10}$/
 }
-function validatePlate(){
-    let inp=document.getElementById('plate').value;
-    if(!(expressions.plate).test(inp)){
-        window.alert("Invalid Plate!!");
-        return false;
-    }else{
-        return true;
+
+function validateBrand() {
+    let inp = document.getElementById('brand').value;
+    let brandRegex = /^[a-zA-Z\s-_\d]{1,30}$/;
+    let brandError = document.getElementById('brand-error');
+  
+    if (inp.trim() === '') {
+      brandError.innerText = "Ingrese la marca del auto.";
+      brandError.style.display = 'block';
+      return false;
+    } else if (!brandRegex.test(inp)) {
+      brandError.innerText = "La marca ingresada no es válida. Ingrese una marca válida.";
+      brandError.style.display = 'block';
+      return false;
+    } else {
+      brandError.style.display = 'none';
+      return true;
     }
+  }
+  
+
+
+function validatePlate() {
+    let inp = document.getElementById('plate').value;
+    let plateRegex = /^[A-Z]{3}\d{4}$/;
+    let plateError = document.getElementById('plate-error');
+  
+    if (inp.trim() === '') {
+      plateError.innerText = "Ingrese la placa del auto.";
+      plateError.style.display = 'block';
+      return false;
+    } else if (!plateRegex.test(inp)) {
+      plateError.innerText = "La placa ingresada no es válida. Ingrese una placa válida en formato ABC1234.";
+      plateError.style.display = 'block';
+      return false;
+    } else {
+      plateError.style.display = 'none';
+      return true;
+    }
+  }
+
+
+  function validateModel() {
+    let inp = document.getElementById('model').value;
+    let modelRegex = /^[a-zA-Z\s.-\d]{1,10}$/;
+    let modelError = document.getElementById('model-error');
+  
+    if (inp.trim() === '') {
+      modelError.innerText = "Ingrese el modelo del auto.";
+      modelError.style.display = 'block';
+      return false;
+    } else if (!modelRegex.test(inp)) {
+      modelError.innerText = "El modelo ingresado no es válido. Ingrese un modelo válido.";
+      modelError.style.display = 'block';
+      return false;
+    } else {
+      modelError.style.display = 'none';
+      return true;
+    }
+  }
+  
+
+  
+  
     
-}
