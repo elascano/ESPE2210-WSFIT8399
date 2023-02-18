@@ -25,7 +25,7 @@
                 <li><input type="datetime-local">Date Time Local</input><br></li>
                 <li><input type="email"> Email </input><br></li>
                 <li><input type="file">File</input><br></li>
-                <li><input type="image"> Image </input><br></li>
+                <li><input type="image">Image </input><br></li>
                 <li><input type="month">Month </input><br></li>
                 <li><input type="number">Number </input><br></li>
                 <li><input type="range">Range </input><br></li>
@@ -33,9 +33,10 @@
                 <li><input type="week">Week </input><br></li>
                 <li><input type="url">Url </input><br></li>
                 <li><input type="tel" id="homephone" name="homephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}"
-                    placeholder="593-02-1234567">Telephone
-                <small>Format: 593-02-1234567</small>
-                </input><br></li>
+                        placeholder="593-02-1234567">Telephone
+                    <small>Format: 593-02-1234567</small>
+                    </input><br>
+                </li>
 
             </ol>
 
@@ -45,6 +46,27 @@
             <input type="reset"></button>
         </form>
     </div>
+
+    <div class="segment"></div>
+
+    <script>
+        var addend1 = parserFloat(document.getElementById('addend1').value);
+        var addend1 = parserFloat(document.getElementById('addend1').value);
+
+        var sum = addend1 + addend2;
+    </script>
+
+    <script>
+        function computeAddition() {
+            var addend1 = parserFloat(document.getElementById('addend1').value);
+            var addend2 = parserFloat(document.getElementById('addend1').value);
+
+            var sum = addend1 + addend2;
+
+        }   
+    </script>
+
+
 </body>
 
 </html>
