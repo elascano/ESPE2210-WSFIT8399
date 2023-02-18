@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="/HW09 - Form/FormRegex/css/style.css">
+    <script src="/HW09 - Form/FormRegex/js/Regex.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="menu navbar">
+            <div class="col-1 d-flex justify-content-center">
+                <img src="/HW09 - Form/img/logoprincipalboy.png" alt="foto-logotipo" class="logolua" href="#">
+            </div>
+            <div class="col-sm-3 d-flex justify-content-left">
+                <a class="texto navbar-brand" href="/06Code/principalpage.html">Lúa Store</a>
+            </div>
+            <div class="col-sm-5 d-flex justify-content-between">
+                <ul class="options">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/forms.html">Buy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2 d-flex justify-content-">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-1 d-flex justify-content-">
+                <button class="search btn" type="submit">
+                    <img src="/HW09 - Form/img/iconblue.png" class="searchicon" alt="searchicon">
+                </button>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="row">
+                <h1 class="title">Pay For Your Product</h1>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-center onsubmit="return validarFormulario();">
+                <form method="get" class="form dl">
+                    <h1 class="title">Card Payment</h1>
+                    <div class="row d-flex justify-content-center">
+                        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required>
+                        <div id="nameError" class="error"></div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="lastname" class="col-sm-2 col-form-label">Card Number:</label>
+                        <input class="form-control" type="number" name="Card" id="Card" placeholder="Card Number"
+                            minlength="16">
+                            <div id="nameError" class="error"></div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="date" class="col-sm-2 col-form-label">Expiration Date:</label>
+                        <input class="form-control" type="date" name="Expiration" id="Expiration" placeholder="Date"
+                            min="2022-12-13">
+                            <div id="nameError" class="error"></div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <label for="zip" class="col-sm-2 col-form-label">Zip:</label>
+                        <input type="text" class="form-control" id="zip" minlength="6" required>
+                        <div id="nameError" class="error"></div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <button type="submit" class="submit btn btn-success">Add
+                        </button>
+                        <button type="reset" class="reset btn btn-danger">Reset
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="/06Code/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="/06Code/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
+                    <li class="nav-item"><a href="/06Code/products.html" class="nav-link px-2 text-muted">Products</a></li>
+                    <li class="nav-item"><a href="/06Code/collection.html" class="nav-link px-2 text-muted">Collections</a>
+                    </li>
+                    <li class="nav-item"><a href="/06Code/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
+                </ul>
+                <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
+                    Guerra</p>
+            </footer>
+        </div>
+</body>
+
+</html>
