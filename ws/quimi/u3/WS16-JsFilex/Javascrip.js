@@ -32,7 +32,7 @@ class Rectangle {
         return this.height * this.width;
     }
 }
-const square = new Rectangle(7, 7);
+const square = new Rectangle(8, 8);
 console.log("The area of a square of side is", square.area);
 
 function factorial(n){
