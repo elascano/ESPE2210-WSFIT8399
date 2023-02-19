@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressure By Anthony Quishpe</title>
+</head>
+
+<body>
+    <div class="segment">
+        <form action="">
+            <h1>Anthony Quishpe</h1>
+            <hr>
+            <h2>Here we can calculate the pressure</h2>
+            <hr>
+            <p>The formula of pressure is P=F/A:</p>
+            <label for="force">The F is Force : </label>
+            <input type="number" name="force" id="force" step="0.01" min="0" max="100">
+            <br>
+            <label for="area">The A is Area : </label>
+            <input type="number" name="area" id="area" min="0" max="100">
+            <br>
+            <input type="submit" name="divide" id="divide" value="Divide" onclick="divideBy();">
+            <hr>
+        </form>
+    </div>
+
+    <script>
+        function divideBy() {
+            var force = parseFloat(document.getElementById('force').value)
+            var area = parseFloat(document.getElementById('area').value)
+            var div = force/area;
+            alert("The calculated Pressure is p= " + force + " / " + area + " is --> " + div);
+        }
+    </script>
+</body>
+
+</html>
