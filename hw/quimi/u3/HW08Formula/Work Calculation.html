@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Calculation by Lizeth Quimi</title>
+</head>
+
+<body>
+   
+    <h1> Work Calculation by Lizeth Quimi</h1>
+ 
+
+    <div class="segment">
+        <form action="">
+        <hr>
+        <label for="Force">Force:</label>
+        <input type="number" name="force" id="force" step="0.01" min="0" max="100">
+        <br>
+        <label for="displacement">Displacement:</label>
+        <input type="number" name="displacement" id="displacement" step="0.01">
+        <br>
+
+        <input type="submit" name="multiplication" id="multiplication" value=" Multiplication" onclick="multiplicationBy();">
+        <hr>
+        </form>
+    </div>
+
+    
+
+<script>
+    function multiplicationBy(){
+        var force=parseFloat(document.getElementById('force').value);
+        var displacement=parseFloat(document.getElementById('displacement').value);
+        var work=force*displacement;
+        alert("The Work of " + force + " * " + displacement + " is -->" + work);
+    }
+</script>
+
+</body>
+</html>

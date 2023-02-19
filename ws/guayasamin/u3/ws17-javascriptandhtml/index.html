@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <hr/>
-    <h1>Complex Widgets (Graphical Controls)</h1>
+    <hr />
+    <h1>Complex Widgets (Graphical Controls) KARLA GUAYASAMIN</h1>
     <h2>Simple: text, password, checkbox</h2>
-    <hr/>
+    <hr />
 
     <div class="segment">
         <form action="" method="GET">
@@ -63,16 +63,43 @@
                     <input type="url">Url</input><br>
                 </li>
                 <li>
-                    <input type="tel" id="homephone" name="homephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}" placeholder="593-02-1234567">Telephone
+                    <input type="tel" id="homephone" name="homephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}"
+                        placeholder="593-02-1234567">Telephone
                     <small>Format:593-02-1234567 </small>
-                </input><br>
+                    </input><br>
                 </li>
             </ol>
-            <hr/>
+            <hr />
             <input type="button" value="+"></input>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
         </form>
+        <div class="segment">
+            <form action="">
+                <hr>
+                <label for="addend1">addend1:</label>
+                <input type="number" name="addend1" id="addend1" step="0.01" min="0" max="100">
+                <br>
+                <label for="addend2">addend2:</label>
+                <input type="number" name="addend2" id="addend2" step="0.01" min="0" >
+                <br>
+                <input type="submit" name="add" id="add" value=" + " onclick="computeAddition();">
+                <input type="submit" name="subtract" id="subtract" value=" -" onclick="computeSubtraction();">
+                <hr>
+            </form>
+
+        </div>
+
+        <script>
+            function computeAddition() {
+                var addend1 = parseFloat(document.getElementById('addend1').value)
+                var addend2 = parseFloat(document.getElementById('addend2').value)
+
+                var sum = addend1 + addend2;
+
+                document.write("The addition of " + addend1 + " + " + addend2 + " is -->" + sum);
+            }
+        </script>
     </div>
 </body>
 
