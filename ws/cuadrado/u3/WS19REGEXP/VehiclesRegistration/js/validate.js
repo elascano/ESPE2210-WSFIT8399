@@ -10,12 +10,12 @@ function validateBrand() {
     let brandError = document.getElementById('brand-error');
   
     if (inp.trim() === '') {
-      brandError.innerText = "Please enter the brand.";
+      brandError.innerText = "Please complete this input";
       brandError.style.display = 'block';
       brandError.style.color = 'red';
       return false;
     } else if (!brandRegex.test(inp)) {
-      brandError.innerText = "!Warning: Enter a valid brand.";
+      brandError.innerText = "this brand does not exist or does not comply with the format";
       brandError.style.display = 'block';
       brandError.style.color = 'red';
       return false;
@@ -34,12 +34,12 @@ function validatePlate() {
     let plateError = document.getElementById('plate-error');
   
     if (inp.trim() === '') {
-      plateError.innerText = "Enter the plate of the vehicle.";
+      plateError.innerText = "Please complete this input";
       plateError.style.display = 'block';
       plateError.style.color = 'red';
       return false;
     } else if (!plateRegex.test(inp)) {
-      plateError.innerText = "! Warning: The plate not valid. Enter a valid license, format: ABC1234.";
+      plateError.innerText = "the plate is entered incorrectly format: PPP1234.";
       plateError.style.display = 'block';
       plateError.style.color = 'red';
       return false;
@@ -57,12 +57,12 @@ function validatePlate() {
     let modelError = document.getElementById('model-error');
   
     if (inp.trim() === '') {
-      modelError.innerText = "Enter the car model.";
+      modelError.innerText = "Please complete this input.";
       modelError.style.display = 'block';
       modelError.style.color = 'red';
       return false;
     } else if (!modelRegex.test(inp)) {
-      modelError.innerText = "!Warning:  Enter a valid model.";
+      modelError.innerText = "invalid format for model.";
       modelError.style.display = 'block';
       modelError.style.color = 'red';
       return false;
