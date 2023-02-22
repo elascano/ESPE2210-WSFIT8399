@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Weight / Karla Guayasamint</title>
+    <title>Document</title>
 </head>
-
 <body>
+    <hr />
+    <h1>Potencial Energy Santiago Cuadrado</h1>
+    <hr />
     <div class="segment">
         <form action="">
-            <h2>Here we can calculate the weight for dinamica in physics</h2>
             <hr>
-            <p>The formula of weight is p=m*g:</p>
-            <label for="weight">The mass is:</label>
+            <label for="mass">mass:</label>
             <input type="number" name="mass" id="mass" step="0.01" min="0" max="100">
             <br>
-            <label for="gravity">The gravity is:</label>
+            <label for="height">height:</label>
+            <input type="number" name="height" id="height" step="0.01" min="0" max="100">
+            <br>
+            <label for="gravity">gravity:</label>
             <input type="number" name="gravity" id="gravity" min="9.8" max="9.8" value="9.8">
             <br>
-            <input type="submit" name="multiply" id="multiply" value=" calculate " onclick="computeMultipliying();">
+            <input type="submit" name="multiply" id="multiply" value="*" onclick="computeMultipliying();">
             <hr>
         </form>
     </div>
-
     <script>
         function computeMultipliying() {
             var mass = parseFloat(document.getElementById('mass').value)
+            var height = parseFloat(document.getElementById('height').value)
             var gravity = parseFloat(document.getElementById('gravity').value)
 
-            var mul = mass * gravity;
+            var mul = mass * height * gravity;
 
-            document.write("The calculated weight is p= " + mass + " * " + gravity + " is --> " + mul);
+            alert("The potencial energy is " + mass + " * " + height + " * " + gravity + " is --> " + mul);
+
         }
     </script>
 </body>
-
-
 </html>
