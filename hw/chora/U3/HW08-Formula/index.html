@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Complex Widgets by Liliana Chora </title>
+
+    <script>
+        function computeAddition(){
+            var initialposition=parseFloat(document.getElementById('initialposition').value);
+            var speed=parseFloat(document.getElementById('speed').value);
+            var time=parseFloat(document.getElementById('time').value);
+            var endposition=initialposition+(speed*time);
+
+            alert("the endposition of "+initialposition+" + "+speed+" *"+time+" is --> "+endposition)
+        }
+    </script>
+  </head>
+  <body>
+      <hr/>
+       <h1>HW 08 WSF</h1>
+       <h2>Calculator by Liliana Chora</h2>
+      <hr/>
+      
+        <form action="">
+            <hr>
+            <p>Uniform line movement MRU</p>
+            <label for="initial position">initial position</label>
+            <input type="number" name="initialposition" id="initialposition" step="0.01" min="0" max="100">
+            <br>
+            <label for="Speed">speed</label>
+            <input type="number" name="speed" id="speed" step="0.01" min="0" max="100">
+            <br>
+            <label for="Time">time</label>
+            <input type="number" name="time" id="time" step="0.01" min="0" max="100">
+            <br>
+            <input type="submit" name="add" id="add" value="endposition" onclick="computeAddition();"></input>
+            <input type="submit" name="substract" id="substract" value="-" onclick="computeSubtraction();"></input>
+
+
+        </form>
+      </div>
+  </body>
+</html>  

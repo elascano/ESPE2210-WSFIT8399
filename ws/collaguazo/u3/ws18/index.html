@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta names="viewport" content="wodth=device-width, initial-scale=1.0" />
+    <title>Elian Collaguazo - Conditional exple toggle button</title>
+  </head>
+
+  <h1>ELIAN COLLAGUAZO</h1>
+
+  <body>
+    <h1>Complex widgets (Graphical Controls)</h1>
+    <br />
+    <button>START</button>
+    <p>The car is stoppped</p>
+  </body>
+
+  <script>
+    const btn = document.querySelector("button");
+    const txt = document.querySelector("p");
+
+    btn.addEventListener("click", updateBtn);
+
+    function updateBtn() {
+        if(btn.textContent == 'Start'){
+            btn.textContent = "Stop engine";
+            txt.textContent = "The car has started";
+        } else {
+            btn.textContent = 'Start';
+            txt.textContent = 'The car has stopped';
+        }
+    }
+  </script>
+</html>

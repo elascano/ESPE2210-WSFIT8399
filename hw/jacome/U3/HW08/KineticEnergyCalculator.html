@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic Energy Calculator</title>
+
+</head>
+
+<body>
+    <h1> Kinetic Energy Calculator By Ivonne Jacome </h1>
+    <div class="segment">
+        <form action=""></form>
+        <hr>
+        The formula for Kinetic Energy is: Ec= 1/2 * mv^2  <br><br>
+        <label for="mass">Mass (kg):</label>
+        <input type="number" name="mass" id="mass"  required>
+        <br>
+        <label for="velocity">Velocity (m/s): </label>
+        <input type="number" id="velocity" required><br><br>
+        <br>
+        <button onclick="calculateKineticEnergy()">Calculate</button><br><br>
+    <script>
+        function calculateKineticEnergy() {
+            var mass = parseFloat(document.getElementById('mass').value);
+            var velocity = parseFloat(document.getElementById('velocity').value);
+            var kineticEnergy = 0.5 * mass * velocity * velocity;
+            alert(" The kinetic energy " + 0.5 + " * " + mass + " * " + velocity + " * " + velocity + " is --> " + kineticEnergy + " J ");
+        }
+    </script>
+</body>
+
+
