@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lúa Store - Products</title>
+    <link rel="stylesheet" href="css/products.css">
+    <script src="js/changeproducts.js">	</script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="menu navbar">
+            <div class="col-1 d-flex justify-content-center">
+                <img src="images/logoprincipal.png" alt="foto-logotipo" class="logolua" href="/principalpage.html">
+            </div>
+            <div class="col-sm-3 d-flex justify-content-left">
+                <a class="texto navbar-brand" href="/06Code/principalpage.html">Lúa Store</a>
+            </div>
+            <div class="col-sm-5 d-flex justify-content-between">
+                <ul class="options">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/06Code/forms.html">Buy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2 d-flex justify-content-">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-1 d-flex justify-content-">
+                <button class="search btn" type="submit">
+                    <img src="images/iconpink.png" class="searchicon" alt="searchicon">
+                </button>
+            </div>
+        </nav>
+
+        <div class="row">
+
+            <div class="mainContent">
+                <h1 class="title">Products</h1>
+                <p>
+                    <img src="images/coleccionprofesiones.jpg" alt="Coleccion Profesiones" id="profesiongrande" />
+                </p>
+                <div class="row">
+                    <div class="col-2">
+                        <button onmouseover="changeImage1();"><img class="profesiones" src="images/enfermero.jpg" alt="Enfermero" /></button>
+                    </div>
+                    <div class="col-2">
+                        <button onmouseover="changeImage2();"><img class="profesiones" src="images/bombero.jpg" alt="Bombero" /></button>
+                    </div>
+                    <div class="col-2">
+                        <button onmouseover="changeImage3();"><img class="profesiones" src="images/fotografo.jpg" alt="Fotografo" /></button>
+                    </div>
+                    <div class="col-2">
+                        <button onmouseover="changeImage4();"><img class="profesiones" src="images/policia.jpg" alt="Policia" /></button>
+                    </div>
+                    <div class="col-2">
+                        <button onmouseover="changeImage5();"><img class="profesiones" src="images/doctor.jpg" alt="Doctor" /></button>
+                    </div>
+                    <div class="col-2">
+                        <button onmouseover="changeImage6();"><img class="profesiones" src="images/vaquero.jpg" alt="Vaquero" /></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/06Code/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="/06Code/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
+                <li class="nav-item"><a href="/06Code/products.html" class="nav-link px-2 text-muted">Products</a></li>
+                <li class="nav-item"><a href="/06Code/collection.html" class="nav-link px-2 text-muted">Collections</a>
+                </li>
+                <li class="nav-item"><a href="/06Code/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
+            </ul>
+            <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
+                Guerra</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Registration</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/validate.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/Validacion.js"></script>
 </head>
 
 <body style="text-align: center;">
-    <h3>Ivonne Jacome</h3>
     <form id="form1" name="form1" style="background-color: darkgrey;">
-        <h2 style="color: hotpink">Car Information </h2>
+        <h2 style="color: orange">Car Information </h2><br>
         <label for="textfield">Brand: </label>
         <input type="text" name="brand" id="brand" onblur="return validateBrand()"><br>
         <span id="brand-error" class="error-message"></span>
@@ -24,10 +23,11 @@
 
         <label for="textfield">Model: </label>
         <input type="text" name="model" id="model" onblur=" validateModel()"><br>
-        <span id="model-error" class="error-message"></span>
+        <span id="model-error" class="error-message"></span><br><br>
         <br>
         <input type="submit" value="Submit">
         <input type="reset">
+
     </form>
 </body>
 </html>
