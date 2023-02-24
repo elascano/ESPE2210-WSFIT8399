@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="alligatorStyle.css" rel="stylesheet" type="text/css" />
+		<link href="css/alligatorStyle.css" rel="stylesheet" type="text/css" />
+		<title>Butterflies</title>
+
+		<script type="text/javascript">
+
+		function image1()
+		{
+			document.getElementById("bigPicture").src = "images/img0.jpg";
+		}
+
+		function image2()
+		{
+			document.getElementById("bigPicture").src = "images/img2.jpg";
+		}
+
+		function image3()
+		{
+			document.getElementById("bigPicture").src = "images/img3.jpg";
+		}
+
+		function image4()
+		{
+			document.getElementById("bigPicture").src = "images/img1.jpg";
+		}
+		</script>
+
+	</head>
+	<body>
+		<div class="mainContent">
+			<h1>Butterflies</h1>
+			
+			<p><img src="images/Imagen1.jpeg" alt="Picture of Butterflies" id="bigPicture"/></p>
+			<button onclick="image1();"><img src="images/Imagen1.jpeg" alt="Picture of Penguin" /></button>
+			<button onclick="image2();"><img src="images/Imagen2.jpeg" alt="Picture of Penguin" /></button>
+			<button onclick="image3();"><img src="images/Imagen3.jpeg" alt="Picture of Penguin" /></button>
+			<button onclick="image4();"><img src="images/Imagen4.jpeg" alt="Picture of Penguin" /></button>			
+			<p id="caption">See the Penguin</p>
+			<p>
+			</p>
+		</div>
+	</body>
+</html>
