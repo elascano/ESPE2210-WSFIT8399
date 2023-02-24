@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #F9EBEA;
+}
+		
+a{
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+		
+h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #763c28;
+}
+		
+a:link{
+	color: #696969;
+}
+		
+a:visited{
+	color: #696969;
+}
+		
+a:hover{
+	color: #302431;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.form-register
+{
+	width: 400px;
+	background: #243024;
+	padding: 30px;
+	margin:auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: "calibri";
+	color:black;
+	box-shadow: 7px 13px 37px #F9EBEA;
+
+}
+
+.form-register
+{
+	width: 400px;
+	background :#F8D4E6;
+	padding: 30px;
+	margin:auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: "calibri";
+	color: black;
+	box-shadow: 7px 13px 37px #F9EBEA;
+
+}
+.form-register h4
+{
+ font-size: 22px;
+
+
+}
+
+.controls {
+	width: 100%;
+	background: #F9EBEA;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+	color:black;
+  }
+  
+  .form-register p {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+  }
+  
+  .form-register a {
+	color: black;
+	text-decoration: none;
+  }
+  
+  .form-register a:hover {
+	color: black;
+	text-decoration: underline;
+  }
+  
+  .form-register .buttons {
+	        padding-left: 13px;
+			padding-right: 13px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 8px;
+			color: black;
+    		background-color: #FDF5E6;
+			cursor: pointer;
+  }
