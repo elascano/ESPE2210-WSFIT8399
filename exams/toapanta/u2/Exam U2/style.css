@@ -56,7 +56,7 @@ body {
 
 .form-deals .buttons {
     width: 100%;
-    background: #0b686b;
+    background: #ffffff;
     border: none;
     padding: 12px;
     color: white;
@@ -100,7 +100,7 @@ input {
 }
 .controls{
     width: 100%;
-    background: #039297;
+    background: #fbfbfb;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -129,10 +129,14 @@ input {
   
   .form-register .buttons {
     width: 100%;
-  background-color: #aa1ef098;
+  background-color: #fefcff98;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
+  }
+
+  .th {
+ color: #fffff;
   }

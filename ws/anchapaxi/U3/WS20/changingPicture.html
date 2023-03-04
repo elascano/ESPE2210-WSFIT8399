@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="css/copitoStyle.css" rel="stylesheet" type="text/css" />
+		<title>Copito</title>
+
+		<script type="text/javascript">
+
+		function image1()
+		{
+			document.getElementById("bigPicture").src = "images/imagen1.jpg";
+		}
+
+		function image2()
+		{
+			document.getElementById("bigPicture").src = "images/imagen2.jpg";
+		}
+
+		function image3()
+		{
+			document.getElementById("bigPicture").src = "images/imagen3.jpg";
+		}
+
+		function image4()
+		{
+			document.getElementById("bigPicture").src = "images/imagen4.jpg";
+		}
+
+
+		</script>
+
+	</head>
+	<body>
+		<div class="mainContent">
+			<h1>Copito</h1>
+			
+			<p><img src="images/imagen1.jpg" alt="Picture of Copito" id="bigPicture"/></p>
+			<button onclick="image1();"><img src="images/imagen1.jpg" alt="Picture of RK" /></button>
+			<button onclick="image2();"><img src="images/imagen2.jpg" alt="Picture of RK" /></button>
+			<button onclick="image3();"><img src="images/imagen3.jpg" alt="Picture of RK" /></button>
+			<button onclick="image4();"><img src="images/imagen4.jpg" alt="Picture of RK" /></button>			
+			<p id="caption">See the ACADEMIA RK</p>
+			
+			<p>
+			</p>
+		</div>
+	</body>
+</html>

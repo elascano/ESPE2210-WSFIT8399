@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Widgets Santiago</title>
+</head>
+
+<body>
+    <hr />
+    <h1>Complex Widgets Santiago(Graphical Controls)</h1>
+    <h2>Simple: text, password, checkbox</h2>
+    <hr />
+
+    <div class="segment">
+        <form action="" method="GET">
+            <ol>
+                <li><input type="checkbox">check</input><br></li>
+                <li><input type="radio">radio</input><br></li>
+                <li><input type="password">password</input><br></li>
+                <li><input type="color">color</input><br></li>
+                <li><input type="datetime">datetime</input><br></li>
+                <li><input type="datetime-local">datetime-local</input><br></li>
+                <li><input type="email">email</input><br></li>
+                <li><input type="file">File</input><br></li>
+                <li><input type="image">image</input><br></li>
+                <li><input type="month">month</input><br></li>
+                <li><input type="number">number</input><br></li>
+                <li><input type="range">range</input><br></li>
+                <li><input type="time">time</input><br></li>
+                <li><input type="week">week</input><br></li>
+                <li><input type="url">url</input><br></li>
+            </ol>
+            <hr />
+            <input type="tel" id="homephone" name="homephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}"
+                placeholder="593-02-1234567">telephone
+            <small> Format: 593-02-1234567</small><br>
+            </input><br>
+            <input type="button" value="+"></input>
+            <input type="submit"></input>
+            <input type="reset"></input>
+
+        </form>
+    </div>
+    <div class="segment">
+        <form action="">
+            <hr>
+            <label for="addend1">addend1:</label>
+            <input type="number" name="addend1" id="addend1" step="0.01" min="0" max="100">
+            <br>
+            <label for="addend2">addend2:</label>
+            <input type="number" name="addend2" id="addend2" step="0.01">
+            <br>
+            <input type="submit" name="add" id="add" value="+" onclick="computeAddition();">
+            <input type="submit" name="subtract" id="add" value="-" onclick="computeSubtraction();">
+            <hr>
+        </form>
+    </div>
+    <script>
+        function computeAddition(){
+            var addend1 = parseFloat(document.getElementById('addend1').value);
+            var addend2 = parseFloat(document.getElementById('addend2').value);
+
+            var sum =addend1 + addend2;
+            alert ("The addition of " +addend1 + "+" + addend2 + " is ----> " + sum);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Widgets By Dayana</title>
+</head>
+
+<body>
+    <h1> My Calculator </h1>
+    <div class="segment">
+        <form action="">
+            <hr>
+            <label for="addend1">addend1:</label>
+            <input type="number" name="addende1" id="addend1" step="0.01" min="0" max="100">
+            <br>
+            <label for="addend1">addend2:</label>
+            <input type="number" name="addende1" id="addend2" step="0.01" min="0" max="100">
+            <br>
+            <input type="submit" name="add" id="add" value=" + " onclick="computeAddition();">
+            <input type="submit" name="subtract" id="subtract" value=" - " onclick="computeSubtraction();">
+
+            </hr>
+
+        </form>
+    </div>
+
+    //DOM
+    <script>
+        var addend1 = parseFloat(document.getElementById('addend1').value);
+        var addend2 = parseFloat(document.getElementById('addend2').value);
+
+        var sum = addend1 + addend2;
+    </script>
+
+    <script>
+        function computeAddition() {
+            var addend1 = parseFloat(document.getElementById('addend1').value);
+            var addend2 = parseFloat(document.getElementById('addend2').value);
+
+            var sum = addend1 + addend2;
+
+            alert("The addition of " + addend1 + " + " + addend2 + " is--> " + sum);
+        }
+    </script>
+</body>
+</html>

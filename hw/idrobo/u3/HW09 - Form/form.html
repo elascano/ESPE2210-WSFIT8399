@@ -50,40 +50,49 @@
             <div class="row">
                 <h1 class="title">Pay For Your Product</h1>
             </div>
-            <div class="col-sm-12 d-flex justify-content-center onsubmit="return validarFormulario();">
-                <form method="get" class="form dl">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <form method="get" class="form dl" onsubmit="return validarFormulario()">
                     <h1 class="title">Card Payment</h1>
                     <div class="row d-flex justify-content-center">
                         <label for="name" class="col-sm-2 col-form-label">Name:</label>
-                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required>
-                        <div id="nameError" class="error"></div>
+                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" >
+                        <div class="col-sm-4">
+                            <span id="error-name" class="error-message"></span>
+                        </div>
+                        
                     </div>
                     <div class="row d-flex justify-content-center">
                         <label for="lastname" class="col-sm-2 col-form-label">Card Number:</label>
-                        <input class="form-control" type="number" name="Card" id="Card" placeholder="Card Number"
-                            minlength="16">
-                            <div id="cardError" class="error"></div>
+                        <input class="form-control" type="number" name="Card" id="Card" placeholder="Card Number" minlength="16">
+                        <div class="col-sm-4">
+                            <span id="error-card" class="error-message"></span>
+                        </div>
+                        
                     </div>
                     <div class="row d-flex justify-content-center">
                         <label for="date" class="col-sm-2 col-form-label">Expiration Date:</label>
-                        <input class="form-control" type="date" name="Expiration" id="Expiration" placeholder="Date"
-                            min="2022-12-13">
-                            <div id="expirationError" class="error"></div>
+                        <input class="form-control" type="date" name="Expiration" id="Expiration" placeholder="Date" min="2023-02-20">
+                        <div class="col-sm-4">
+                            <span id="error-expiration" class="error-message"></span>
+                        </div>
+                        
                     </div>
-
                     <div class="row d-flex justify-content-center">
                         <label for="zip" class="col-sm-2 col-form-label">Zip:</label>
-                        <input type="text" class="form-control" id="zip" minlength="6" required>
-                        <div id="zipError" class="error"></div>
+                        <input type="text" class="form-control" id="zip" minlength="6" >
+                        <div class="col-sm-4">
+                            <span id="error-zip" class="error-message"></span>
+                        </div>
+                      
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <button type="submit" class="submit btn btn-success">Add
-                        </button>
-                        <button type="reset" class="reset btn btn-danger">Reset
-                        </button>
+                        <button type="submit" class="submit btn btn-success">Add</button>
+                        <button type="reset" class="reset btn btn-danger">Reset</button>
                     </div>
                 </form>
             </div>
+              
+              
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item"><a href="/06Code/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
