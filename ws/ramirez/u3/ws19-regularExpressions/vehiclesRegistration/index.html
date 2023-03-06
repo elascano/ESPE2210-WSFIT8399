@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <link rel="stylesheet" href="C:\Users\Angie Ramirez\Documents\4to Semestre\FSW-8399\ESPE2210-WSFIT8399\ws\ramirez\u3\ws19-regularExpressions\vehiclesRegistration\Css\style.css">
+    <script src="C:\Users\Angie Ramirez\Documents\4to Semestre\FSW-8399\ESPE2210-WSFIT8399\ws\ramirez\u3\ws19-regularExpressions\vehiclesRegistration\js\java.js"></script>
+</head>
+<body style="text-align: center">
+<form id="form1" name="form1" style="background-color: darkgrey">
+    <h2 style="color: hotpink">Car Information </h2>
+        <label for="textfield">Brand: </label>
+        <input type="text" name="brand" id="brand" onblur="return validateBrand()"><br>
+        <span id="brand-error" class="error-message"></span>
+
+        <label for="textfield">Plate: </label>
+        <input type="text" name="plate" id="plate" onblur=" validatePlate()"><br>
+        <span id="plate-error" class="error-message"></span>
+
+        <label for="textfield">Model: </label>
+        <input type="text" name="model" id="model" onblur=" validateModel()"><br>
+        <span id="model-error" class="error-message"></span>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Access a JavaScript Object</h2>
+<p id="demo"></p>
+
+<script>
+const myJSON = '{"ID":1722902630, "NAME":"Carlos", "LASTNAME":"Villacres"}';
+const myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj["ID"];
+document.getElementById("demo").innerHTML = myObj.ID;
+</script>
+
+</body>
+</html>
