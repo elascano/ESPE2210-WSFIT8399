@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validate.js"></script>
+</head>
+
+<body style="text-align: center;">
+    <h3>Registration Vehicles by Dayana Anchapaxi</h3>
+    <form id="form1" name="form1" style="background-color: darkgrey;">
+        <h2 style="color: hotpink">Car Information </h2>
+        <label for="textfield">Brand: </label>
+        <input type="text" name="brand" id="brand" onblur="return validateBrand()"><br>
+        <span id="brand-error" class="error-message"></span>
+
+        <label for="textfield">Plate: </label>
+        <input type="text" name="plate" id="plate" onblur=" validatePlate()"><br>
+        <span id="plate-error" class="error-message"></span>
+
+        <label for="textfield">Model: </label>
+        <input type="text" name="model" id="model" onblur=" validateModel()"><br>
+        <span id="model-error" class="error-message"></span>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
