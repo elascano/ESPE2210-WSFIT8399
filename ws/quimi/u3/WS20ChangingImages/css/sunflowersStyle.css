@@ -1,0 +1,18 @@
+body {
+    background-color: #e4c193;
+}
+
+img {
+    height: 440px;
+}
+
+button img {
+    height: 94px;
+}
+
+
+div.mainContent {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}

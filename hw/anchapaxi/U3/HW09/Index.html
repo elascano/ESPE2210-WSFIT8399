@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <center>
+<table  width="100%" border="0">
+  <tr>
+    <td><img src="img/UnderratedLogo.png" width="150" height="150" alt=""/></td>
+    <td><h1>UnderratedEc</h1></td>
+    <td><input type="text" placeholder="Buscas Algo....?"></td>
+  </tr>
+</table>
+</center>
+<hr>
+<center>
+<table cellpadding="15" width="200" border="0">
+  <tbody>
+    <tr>
+      <th scope="col"><a href="html/Ropa/Ropa.html">Inicio</a></th>
+      <th scope="col"><a href="html/Articulos Deportivos/Articulos Deportivos.html">Artículos Deportivos</a></th>
+      <th scope="col"><a href="html/Zapatillas/zapatillas.html">Zapatillas</a></th>
+      <th scope="col"><a href="html/Ropa/Ropa.html">Ropa</a></th>
+      <th scope="col"><a href="html/Contactanos/Contactanos.html">Contactos y Servicios</a></th>
+      <th scope="col"><a href="html/Preventa/preventa.html">Preventas</a></th>
+    </tr>
+  </tbody>
+</table>
+<h2>Ropa de hombre y Mujer</h2>
+<table width="200" border="1">
+  <tbody>
+    <tr>
+      <th scope="col"><img src="img/p1.webp" width="300" height="200" alt=""/></th>
+      <th scope="col"><img src="img/p2.jpg" width="300" height="200" alt=""/></th>
+      <th scope="col"><img src="img/p3.jpg" width="300" height="200" alt=""/></th>
+      <th scope="col"><img src="img/p4.jpg" width="300" height="200" alt=""/></th>
+    </tr>
+  </tbody>
+</table>
+<h2>Escoge tambien:</h2>
+<table width="200" border="1">
+  <tbody>
+    <tr>
+      <th scope="col"><img src="img/p6.jpg" width="300" height="200" alt=""/></th>
+      <th scope="col"><img src="img/p7.jpg" width="300" height="200" alt=""/></th>
+      <th scope="col"><img src="img/p8.jpg" width="300" height="200" alt=""/></th>
+      <th scope="col"><img src="img/p9.jpg" width="300" height="200" alt=""/></th>
+    </tr>
+  </tbody>
+</table>
+
+<h2> Productos</h2>
+        <hr size="5">
+        <form method="get">
+            <table cellpadding="10" width="10%">
+                <h2>ROPA</h2>
+                </caption>
+                <caption>Ingrese los datos para su compra:</caption>
+                <tr>
+                  <td><label for="name">Nombre:</label></td>
+                  <td><input type="text" id="name" name="name"  onblur="return validateName()" required/></td>
+                  <td><span id="name-error" class="error-message"></span> </td>
+              </tr>
+              <tr>
+                  <td><label for="lastname">Apellido:</label></td>
+                  <td><input type="text" name="lastname" id="lastname"  onblur="return validateLastName()" required/></td>
+                  <td><span id="last-error" class="error-message"></span> </td>
+              </tr>  
+              <tr>
+                <td><label for="id">Código Ropa:</label></td>
+                <td><input type="text" id="identification" pattern="[0-9]+" maxlength="10" minlength="10" onblur="return validateIdentification()" required/></td>
+                <td><span id="id-error" class="error-message"></span> </td>
+            </tr>
+            <tr>
+              <td><label for="gender">Elija el género:</label></td>
+              <td><input type="radio" id="male" name="gender" value="M" required/>
+                  <label for="male">Mujer</label><br>
+                  <input type="radio" id="female" name="gender" value="F" required/>
+                  <label for="female">Hombre</label><br>
+                  <input type="radio" id="none" name="gender" value="N" required/>
+                  <label for="none">None</label>
+              </td>
+          </tr>
+                <tr>
+                    <td><label for="Tipo">Elija el tipo de prenda:</label></td>
+                    <td><select name="select">
+                            <option value="Chompa" selected>Chompa</option>
+                            <option value="Camiseta">Camiseta</option>
+                            <option value="Vividi">Vividi</option>
+                            <option value="Licra">Licra</option>
+                            <option value="Pantalón">Pantalón</option>
+                            <option value="Pantaloneta">Pantaloneta</option>
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label for="Diseño">Escoja la marca:</label></td>
+                    <td><select id="Marca" name="Marca" size="3">
+                            <option value="nike">NIKE</option>
+                            <option value="adidas">ADIDAS</option>
+                            <option value="puma">PUMA</option>
+                            <option value="under armour">UNDER ARMOUR</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Talla">Escoja la talla: </label></td>
+                    <td><input type="checkbox" name="S">
+                        <label for="S">S</label><br>
+                        <input type="checkbox" name="S">
+                        <label for="M">M</label><br>
+                        <input type="checkbox" name="L">
+                        <label for="L">L</label><br>
+                        <input type="checkbox" name="XL">
+                        <label for="XL">XL</label>
+                    </td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Forma de pago:</label></td>
+                  <td><input type="radio" id="male" name="gender" value="M" required/>
+                      <label for="male">Efectivo</label><br>
+                      <input type="radio" id="female" name="gender" value="F" required/>
+                      <label for="female">Crédito</label><br>
+                      <input type="radio" id="none" name="gender" value="N" required/>
+                      <label for="none">Transferencia</label>
+                  </td>
+              </tr>
+                <tr>
+                    <td><input type="submit" value="Aceptar" name="Aceptar"></td>
+                    <td><input type="reset" value="Cancelar" name="Cancelar"></td>
+            </table>
+        </form>
+</body>
+</html>

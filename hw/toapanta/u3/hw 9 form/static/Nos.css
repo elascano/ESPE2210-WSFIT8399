@@ -1,0 +1,33 @@
+/* Estilo para el título */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fbfbfb;
+    margin-top: 50px;
+  }
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 50px;
+  }
+  
+  /* Estilo para el párrafo de la misión */
+  p:first-of-type {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 50px;
+  }
+  
+  /* Estilo para el párrafo de la visión */
+  p:last-of-type {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 50px;
+  }
+  
+  /* Estilo para el contenedor */
+  body {
+    background-color: #f2f2f2;
+  }

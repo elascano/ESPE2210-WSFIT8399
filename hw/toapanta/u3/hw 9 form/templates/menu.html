@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Página de inicio</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menu.css', _external=True) }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tla.css', _external=True) }}">
+</head>
+
+<body>
+  <header>
+    <h1>Unidades de Policía Comunitaria</h1>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('inicio')  }}">Inicio</a></li>
+        <li><a href="{{ url_for('sobreNosotros') }}"> Sobre nosotros</a></li>
+        <li><a href="{{ url_for('ejemplo') }}">Consulta General</a> </li>
+        <li><a href="{{ url_for('formulario_contar_upc')  }}" method="GET"> Numero de UPC's por barrio</a></li>
+        <li><a href="{{ url_for('formulario_contar_pandillas') }}">Contar pandillas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Zonas por donde trabajamos como Policia Nacional del Ecuador</h1>
+    <table class="tabla-mapa" style="max-width: 800px; margin: 0 auto;">
+      <thead>
+        <tr>
+          <th>Latitud</th>
+          <th>Longitud</th>
+          {% for header in headers %}
+          <th>{{ header }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+          {% for col in row[2:] %}
+          <td>{{ col }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>Derechos reservados © 2023</p>
+  </footer>
+</body>
+
+</html>

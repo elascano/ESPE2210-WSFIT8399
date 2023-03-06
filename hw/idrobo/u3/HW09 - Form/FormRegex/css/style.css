@@ -157,4 +157,17 @@ LUA GIRL #f298b15d
   background-color: rgb(207, 211, 243);
   max-width: 800px;
 }
-
+.container {
+    text-align: center;
+  }
+  
+  /* Estilos para el span */
+  .container span {
+    display: inline-block;
+    color: red;
+    font-size: 0.8rem;
+  }
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+  }

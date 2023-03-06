@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Función Contar Pandillas: Resultado</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menu.css', _external=True) }}">
+</head>
+
+<body>
+
+  <header>
+    <h1>Unidades de Policía Comunitaria</h1>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('inicio')  }}">Inicio</a></li>
+        <li><a href="{{ url_for('sobreNosotros') }}"> Sobre nosotros</a></li>
+        <li><a href="{{ url_for('ejemplo') }}">Consulta General</a> </li>
+        <li><a href="{{ url_for('formulario_contar_upc')  }}" method="GET"> Numero de UPC's por barrio</a></li>
+        <li><a href="{{ url_for('formulario_contar_pandillas') }}">Contar pandillas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>En el barrio se han reportado: {{ resultado }} pandillas</h1>
+
+</body>
+
+</html>

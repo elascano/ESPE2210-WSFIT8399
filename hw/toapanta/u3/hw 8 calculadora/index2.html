@@ -1,0 +1,30 @@
+<p>Cristian Idrobo - HW08</p>
+
+<div class="segment">
+    <form action="">
+        <hr>
+        <label for="addend1">currency</label>
+        <input type="number" name="currency" id="currency" step="0.01" min="0" max="100">
+        <br>
+        <label for="addend1">resistance</label>
+        <input type="number" name="resistance" id="resistance" step="0.01" min="0" >
+        <br>
+    
+        <input type="submit" name="slope" id="slope" value="Result" onclick="computeSlope();">
+        
+        <br>
+    </form>
+</div>
+
+
+<script>
+    function computeSlope(){
+        var CoordX1= parseFloat(document.getElementById('currency').value);
+        var CoordX2= parseFloat(document.getElementById('resistance').value);
+
+        var voltage = (currency *resistance);
+
+        alert("The value os tension is --->"  + voltage )
+
+    }
+</script>
