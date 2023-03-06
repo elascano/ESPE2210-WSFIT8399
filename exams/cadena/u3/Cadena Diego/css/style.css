@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(4, 15, 39);
+    
+}
+.mi-div{
+    background-image: url('img/image1.png');
+    background-size: cover;
+      background-position: center;
+      width: 50%;
+      height: 100px;
+
+    
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(247, 210, 0);
+}

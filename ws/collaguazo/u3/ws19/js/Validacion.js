@@ -13,13 +13,16 @@ function validateBrand() {
       brandError.innerText = "Please enter the brand.";
       brandError.style.display = 'block';
       return false;
+		
     } else if (!brandRegex.test(inp)) {
       brandError.innerText = "ERROR.......The brand entered is not valid. Enter a valid brand.";
       brandError.style.display = 'block';
       return false;
+		
     } else {
       brandError.style.display = 'none';
       return true;
+		
     }
   }
   
@@ -34,13 +37,16 @@ function validatePlate() {
       plateError.innerText = "Please enter the plate of the vehicle.";
       plateError.style.display = 'block';
       return false;
+		
     } else if (!plateRegex.test(inp)) {
       plateError.innerText = "ERROR...The license plate entered is not valid. Please enter a valid license plate remember the format is ABC1234.";
       plateError.style.display = 'block';
       return false;
+		
     } else {
       plateError.style.display = 'none';
       return true;
+		
     }
   }
 
@@ -54,12 +60,15 @@ function validatePlate() {
       modelError.innerText = "Please enter the car model.";
       modelError.style.display = 'block';
       return false;
+		
     } else if (!modelRegex.test(inp)) {
       modelError.innerText = "ERROR....The model entered is not valid. Please enter a valid model.";
       modelError.style.display = 'block';
       return false;
+		
     } else {
       modelError.style.display = 'none';
       return true;
+		
     }
   }
