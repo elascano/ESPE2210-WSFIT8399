@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-color: #F9EBEA;
+}
+		
+a{
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+		
+h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #763c28;
+}
+		
+a:link{
+	color: #696969;
+}
+		
+a:visited{
+	color: #696969;
+}
+		
+a:hover{
+	color: #302431;
+}
+
+button{
+			padding-left: 13px;
+			padding-right: 13px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 8px;
+			color: black;
+    		background-color: #FDF5E6;
+			cursor: pointer;
+		}
+
+form{
+	padding: 25px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
+
+
+.changue {
+    height: 540px;
+}
+
+button img {
+    height: 94px;
+}
+
+div.mainContent {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+
