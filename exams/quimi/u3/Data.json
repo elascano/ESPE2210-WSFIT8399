@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "64060e45729aa41331555a89"
+  },
+  "name": "Julio",
+  "age": 27,
+  "spend money": 30.5,
+  "id": 1245632345
+},{
+  "_id": {
+    "$oid": "64060e6d729aa41331555a8b"
+  },
+  "name": "Maritza",
+  "age": 37,
+  "spend money": 80.5,
+  "id": 1854376654
+},{
+  "_id": {
+    "$oid": "64060e95729aa41331555a8d"
+  },
+  "name": "Jose",
+  "age": 20,
+  "spend money": 20,
+  "id": 1003454320
+},{
+  "_id": {
+    "$oid": "64060f0f729aa41331555a8f"
+  },
+  "id": 1734769845,
+  "name": "Pablo",
+  "age": 40,
+  "spend money": 135.3
+},{
+  "_id": {
+    "$oid": "64061051729aa41331555a91"
+  },
+  "id": 1751393850,
+  "name": "Carlos",
+  "age": 30,
+  "spend money": 100.25
+},{
+  "_id": {
+    "$oid": "640610dc729aa41331555a93"
+  },
+  "id": 1753453850,
+  "name": "Maria",
+  "age": 30,
+  "spend money": 100
+},{
+  "_id": {
+    "$oid": "64061108729aa41331555a95"
+  },
+  "id": 1003433859,
+  "name": "Matias",
+  "age": 45,
+  "spend money": 300.5
+},{
+  "_id": {
+    "$oid": "64061131729aa41331555a97"
+  },
+  "id": 1257493558,
+  "name": "Francisco",
+  "age": 37,
+  "spend money": 67.8
+},{
+  "_id": {
+    "$oid": "6406115d729aa41331555a99"
+  },
+  "id": 1005345350,
+  "name": "Doris",
+  "age": 32,
+  "spend money": 90.35
+},{
+  "_id": {
+    "$oid": "64061186729aa41331555a9b"
+  },
+  "id": 1756423890,
+  "name": "Julia",
+  "age": 23,
+  "spend money": 55.75
+}]

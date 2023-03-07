@@ -7,7 +7,7 @@ const app = express()
 app.use('/bank', routes)
 
 const database = mongoose.connection;
-const url = `mongodb+srv://lizeth:Lizeth@cluster0.fngfcfb.mongodb.net/?retryWrites=true&w=majority`
+const url = `mongodb+srv://lizeth:Lizeth@cluster0.fngfcfb.mongodb.net/shoperos?retryWrites=true&w=majority`
 
 mongose.connect(url);
 
