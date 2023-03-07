@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Speed</title>
+</head>
+
+<body>
+    <h1> Calculate Speed By Dennis Ayo </h1>
+    <div class="segment">
+        <form action="">
+            <hr>
+            <label for="distance">distance:</label>
+            <input type="number" name="distance" id="distance" step="0.01" min="0" max="100"><br><br>
+            <label for="time">time:</label>
+            <input type="number" name="time" id="time" step="0.01" min="0" max="100"><br><br>
+            <input type="submit" name="add" id="add" value=" Speed " onclick="computeSpeed();">
+            </hr>
+
+        </form>
+    </div>
+
+    <script>
+        var addend1 = parseFloat(document.getElementById('distance').value);
+        var addend2 = parseFloat(document.getElementById('time').value);
+
+        var speed = distance / time;
+    </script>
+
+    <script>
+        function computeSpeed() {
+            var distance = parseFloat(document.getElementById('distance').value);
+            var time = parseFloat(document.getElementById('time').value);
+
+            var speed = distance / time;
+
+            alert("The speed of " + distance + " / " + time + " is--> " + speed); 
+        }
+    </script>
+</body>
+
+</html>
