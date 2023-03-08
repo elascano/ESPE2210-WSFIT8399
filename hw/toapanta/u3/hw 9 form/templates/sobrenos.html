@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menu.css', _external=True) }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Nos.css', _external=True) }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Unidades de Policía Comunitaria</h1>
+
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('inicio')  }}">Inicio</a></li>
+                <li><a href="{{ url_for('sobreNosotros') }}"> Sobre nosotros</a></li>
+                <li><a href="{{ url_for('ejemplo') }}">Consulta General</a> </li>
+                <li><a href="{{ url_for('formulario_contar_upc')  }}" method="GET"> Numero de UPC's por barrio</a></li>
+                <li><a href="{{ url_for('formulario_contar_pandillas') }}">Contar pandillas</a></li>
+              </ul>
+        </nav>
+    </header>
+
+
+    <h2>MISION Y VISION </h2>
+    <p>Misión:
+        Nuestra empresa se dedica a detectar y futuro prevenir la delincuencia en el país de Ecuador
+        mediante el uso de tecnologías avanzadas y análisis de datos inteligentes. Trabajamos en
+        colaboración con la policía y otras agencias de seguridad para brindar soluciones efectivas
+        y mejorar la seguridad de la comunidad. </p>
+
+    <p>Visión:
+        Ser la empresa líder en la detección y prevención de la delincuencia en Ecuador,
+        siendo reconocidos por nuestra capacidad de innovación, tecnología y calidad en el servicio.
+        Aspiramos a crear un entorno más seguro para todos los ciudadanos de Ecuador, y contribuir al
+        bienestar social y económico del país. </p>
+</body>
+<footer>
+    <p>Derechos reservados © 2023</p>
+</footer>
+
+</html>

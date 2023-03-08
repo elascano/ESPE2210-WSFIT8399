@@ -1,0 +1,131 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../Imagen/fondo2.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(255, 254, 254);
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header {
+    background: rgb(3, 3, 3);
+    color: rgb(248, 248, 248);
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+#regresar {
+    color: rgb(250, 250, 250);
+
+}
+
+.imgLogo {
+    height: 80px;
+    width: 80px;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navigation{
+    width: 100%;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+
+nav ul li a:hover {
+    background: #4161ca;
+}
+
+.form-register{
+    width: 400px;
+    background: #bcbfc9;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(17, 17, 17);
+    box-shadow: 7px 13px 37px #0000;
+}
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    background: #0000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #a000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .buttons {
+    width: 100%;
+    background: #0000;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  table {
+    background-color: #0000;
+}

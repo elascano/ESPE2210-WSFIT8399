@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/BACKGROUND.jpg');
+    background-size: contain;
+}
+
+.form-deals {
+    width: 400px;
+    background: #0d0397;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-deals h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.controls {
+    width: 100%;
+    background: #99a9a1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #8fb1a0;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+
+}
+
+.form-deals p {
+    height: 40px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-deals a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-deals a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-deals .buttons {
+    width: 100%;
+    background: #3b1ab4;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.img_container {
+    text-align: left;
+}
+.tacbox {
+    color: #000;
+  display:block;
+  padding: 1em;
+  margin: 2em;
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(104, 94, 245);
+  max-width: 800px;
+}
+
+input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
+
+.form-register{
+    width: 400px;
+    background: #a0bdba;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    background: #9bb6b3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #7775ff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+#salida  {
+    background: white;
+    margin:auto;
+    padding:10px;
+    font-size:25px;
+ }
+ .res{
+   color:rgb(255, 254, 254);
+ }
+ #salidaA{
+   padding: 20px;
+   background: white;
+    margin:auto;
+ }
+.form-register p {
+    height: 40px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  
+  .form-register .buttons {
+    width: 100%;
+    background: #1d0d53;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }

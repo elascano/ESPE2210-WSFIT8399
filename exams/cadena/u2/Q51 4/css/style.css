@@ -2,17 +2,14 @@ body{
     background-color: #ffffff;
     
   }
-  p {
-    color: #000000 ;
-    border: 2px solid #08A1C3;
-    border-style:dotted;
-    margin: auto;
-    text-align:center;
-    width: 50%;
-    font-family: 'Dosis', sans-serif;
-    font-size: 25px;
-  }
+
   table{
+<<<<<<< HEAD
+    background-color:#3A6993;
+  }
+
+  
+=======
     background-color:#42729E;
   }
 
@@ -31,6 +28,7 @@ h3{
   font-size: 25px;
 }
 
+>>>>>>> 24e95c4897a2c49127a90bcb141b142fe25b478d
 h1{
     color: #cac6a4;
     font-family: 'Bebas Neue', cursive;
@@ -43,24 +41,32 @@ a{
     padding: 2px 20px 0; /*el 20 es el espacio entre los botones del menu los demas numeros no les cacho*/
     color:#ffffff;
     font-size: 20px;
+    font-family:Georgia, Times, 'Times New Roman', serif;
 }
 
 a:focus{  /*Para cuando se da clic*/
     border-bottom: 1px solid;
     background: #fa8619;
+
 }
 
 a:hover { /*Para pasar pon encima el mouse*/
     
     background: #fa6806;
-    text-decoration-color: #000000;
+    color: #000000;
   }
 
   table td {   /*Centrar los elementos de la cabecera logo,titulo,etc*/
     text-align: center;
-    color: #d9f1ea;
+
   }
 
   table.submenu{
     background-color: #BBC8D4;
+<<<<<<< HEAD
+    
   }
+  
+=======
+  }
+>>>>>>> 24e95c4897a2c49127a90bcb141b142fe25b478d

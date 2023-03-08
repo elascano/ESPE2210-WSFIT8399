@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="widt=device-with, initial-scale=1.0">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="CSS/styleform.css" rel="stylesheet" type="text/css">  
+    <link href="CSS/style-error.css" rel="stylesheet" type="text/css"> 
+    <script src="JS/validateform.js"></script>
+    <title>FormComputadoras</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <!--<a id="regresar" href="../index.html">Regresar</a>-->
+        <a>
+            <img src="img/logo.png" class="imgLogo">
+        </a>
+        <nav>
+            <ul>
+                <li><a id="regresar" href="../index.html">Home</a></li>
+            </ul>
+        </nav><!-- / nav -->
+    </header>
+    <section class="forms">
+        <h4>Record your Age</h4>
+        <form method="get">
+            <div>
+                <label for="nombre">Name:</label>
+                <input class="controls" type="text" id="name" name="name" minlength="5" maxlength="40"
+                    placeholder="Enter your name" onblur=" validateName()">
+                <span id="name-error" class="error-message"></span>
+            </div>
+            <div>                
+                Birthdate:<input class="controls" type="date" id="birthdate" name="birthdate" size="4"
+                 required="required" placeholder="Enter the day" onblur=" validateBirthdate()">
+            </div>
+
+            <label>Calculte: </label>
+            <input type="text" class="controls" id="edad" placeholder="Click to calculate your age" readonly>
+            <div>
+                <center>
+                    <input class="button" type="submit" value="Send"> <input class="button" type="reset"
+                        value="Reset">
+                </center> <br>
+            </div>
+
+        </form>
+        
+
+    </section>
+</body>
+
+</html>

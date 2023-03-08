@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+    <link href="CSS/Styles_forms.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECORD</title>
+</head>
+
+<body>
+    <header id="main-header">
+        
+        <div class="container logo-nav">
+            <a>
+                <img src="Imagen/logo.png" class="imgLogo">
+            </a>
+            <center><h1>
+                STAR WARS
+            </h1></center>
+            <span class="menu-icon">MENU</span>
+            <nav class="navigation">
+                <center><ul>
+                    <li><a id="regresar" href="index.html">Home</a></li>
+                    <li><a id="regresar" href="index.html">Tickets</a></li>
+                    <li><a id="regresar" href="index.html">Products</a></li>
+                    <li><a id="regresar" href="Forms.html">Record</a></li>
+                    <li><a id="regresar" href="index.html">Community</a></li>
+                </ul></center>
+            </nav>
+        </div>
+        
+    </header>
+
+
+    <section class="form-register">
+        <h1 align="center">Record</h1>
+        <h1>RECORD</h1>
+        <br>
+        <td><label for="ID">ID:</label></td>
+        <td><input class="controls" type="text" id="identification" pattern="[0-9]{10}" maxlength="10"placeholder="1726174582" onblur="return validateIdentification()" required></td>  
+        <td><span id="id-error" class="error-message" placeholder="Ej: 1003433859"></span> </td>
+
+        <td><label for="name">Name:</label></td>
+        <td><input class="controls" type="string" id="name" placeholder="Matias" onblur="return validateName()" required></td>
+        <td><span id="name-error" class="error-message" placeholder="Javier"></span></td>
+
+        <td><label for="lastname">Last Name:</label></td>
+        <td><input class="controls" type="string" id="lastname" placeholder="Salazar" onblur="return validateLastName()" required></td>
+        <td><span id="last-error" class="error-message" placeholder="Diaz"></span></td>
+
+        <td><label for="age">Age:</label></td>
+        <td><input class="controls" type="number" id="age" placeholder="45" onblur="return validatege()" required></td>
+        <td><span id="age-error" class="error-message" placeholder="45"></span></td>
+        
+        <td><label for="">Spend Money:</label></td>
+        <td><input class="controls" type="text" id="money" placeholder="$300.50" onblur="return validateMoney()" required></td>
+        <td><span id="money-error" class="error-message" placeholder="300.50"></span></td>
+
+        <div class="tacbox">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox">I<a href="#">accept terms and conditions.
+                Send.</a></label>
+        </div>
+
+        <table width="100%">
+            <td align="center">
+                <input class="buttons" type="submit" value="Send" width="25">
+                <input class="buttons" type="reset" value="Cancel" width="40">
+            </td>
+        </table>
+
+    </section>
+
+</body>
+
+</html>
