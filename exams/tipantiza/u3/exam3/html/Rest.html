@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta characters="UTF-8">
+    <meta name="viewport" content="width=device-wisth, initial-scale=1.0">
+    <link href="stylerest.css" rel="stylesheet" type="text/css">
+    <script src="../js/RestValidation.js"></script>
+</head>
+<title> REST</title>
+
+<body>
+    <form>
+        <div class="img">
+        </div>
+
+        <center>
+            <th>
+                <img src="Toys2.png" width="300">
+            </th>
+            <table border="2">
+                <tr>
+                    <th width="200"> <a href="index.html"> HOME </a> </th>
+                    <th width="200"> <a href="Rest.html"> REST </a> </th>
+                </tr>
+                <style>
+                </style>
+
+            </table>
+        </center>
+
+
+        <section class="form-register">
+            <img src="Toys2.png" width="345px" height="150">
+            <h1 align="center"> REST</h1>
+            <h2>Date</h2>
+            <br>
+            <td><label for="ID">ID:</label></td>
+            <td><input class="controls" type="text" id="identification" pattern="[0-9]{10}" maxlength="10"placeholder="1726174582" onblur="return validateIdentification()" required></td>  
+            <td><span id="id-error" class="error-message" placeholder="Ej: 1752373140"></span> </td>
+
+            <td><label for="name">Name:</label></td>
+            <td><input class="controls" type="text" id="name" placeholder="Javier" onblur="return validateName()" required></td>
+            <td><span id="name-error" class="error-message" placeholder="Javier"></span></td>
+
+            <td><label for="lastname">Last Name:</label></td>
+            <td><input class="controls" type="text" id="lastname" placeholder="Salazar" onblur="return validateLastName()" required></td>
+            <td><span id="last-error" class="error-message" placeholder="Diaz"></span></td>
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">I<a href="#">accept terms and conditions.
+                    Send.</a></label>
+            </div>
+
+            <table width="100%">
+                <td align="center">
+                    <input class="buttons" type="submit" value="Send" width="25">
+                    <input class="buttons" type="reset" value="Cancel" width="40">
+                </td>
+            </table>
+
+        </section>
+
+    </form>
+</body>
+
+</html>

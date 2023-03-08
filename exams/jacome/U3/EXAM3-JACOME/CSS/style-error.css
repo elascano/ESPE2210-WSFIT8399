@@ -1,0 +1,21 @@
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+input[type="date"] {
+    border: 2px solid gray;
+}
+
+input[type="date"]:focus {
+    border-color: blue;
+}
+
+input[type="date"][style*="red"] {
+    border-color: red;
+}
+
+input[type="date"][style*="green"] {
+    border-color: green;
+}

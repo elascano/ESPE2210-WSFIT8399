@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="iva.js"></script>
+    <title>IVA-KARLA GUAYASAMIN</title>
+</head>
+
+<body>
+    <div class="containet-fluid">
+        <form action="get">
+            <div class="row">
+                <div class="col-6">
+                    <h2>NAME</h2>
+                </div>
+                <div class="col-6">
+                    <h2>PRICE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="product1" class="col-sm-2 col-form-label">Product 1</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" name="price1" id="price1" min="0.00" max="10.00">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="product2" class="col-sm-2 col-form-label">Product 2</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" name="price2" id="price2" min="0.00" max="10.00">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="product3" class="col-sm-2 col-form-label">Product 3</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" name="price3" id="price3" min="0.00" max="10.00">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="product4" class="col-sm-2 col-form-label">Product 4</label>
+                </div>
+
+                <div class="col-6">
+                    <input type="number" name="price4" id="price4" min="0.00" max="10.00">
+                </div>
+            </div>
+            <div class="row">
+                <h3>IVA TOTAL </h3>
+                <input type="submit" name="multiply" id="multiply" value=" calculate " onclick="computeMultipliying();">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

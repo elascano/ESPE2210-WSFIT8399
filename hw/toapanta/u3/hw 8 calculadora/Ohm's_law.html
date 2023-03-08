@@ -1,0 +1,31 @@
+<p>Jonathan Toapanta  HW08</p>
+
+<div class="segment">
+<h1> Ohm's law (voltage)</h1>
+    <form action="">
+        <hr>
+        <label for="addend1">currency</label>
+        <input type="number" name="currency" id="currency" step="0.01" min="0" max="100">
+        <br>y
+        <label for="addend1">resistance</label>
+        <input type="number" name="resistance" id="resistance" step="0.01" min="0" >
+        <br>
+    
+        <input type="submit" name="slope" id="slope" value="Result" onclick="computeSlope();">
+        
+        <br>
+    </form>
+</div>
+
+
+<script>
+    function computeSlope(){
+        var currency= parseFloat(document.getElementById('currency').value);
+        var resistance= parseFloat(document.getElementById('resistance').value);
+
+        var voltage = (currency * resistance);
+
+        alert("The value os tension is --->"  + voltage )
+
+    }
+</script>u 7y665ttv7

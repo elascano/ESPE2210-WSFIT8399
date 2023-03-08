@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Age Calculate</title>
+  </head>
+  <body>
+    <h1 style="color: blue ">Age Calculate Costumers  </h1>
+    <form>
+      <label style="color: rgb(64, 28, 117) " for="dob">Enter of your birth:</label>
+      <input type="date" id="dob" name="dob">
+      <br>
+      <button type="button" onclick="calculate()">Calculate Age</button>
+      <br>
+      <div id="result"></div>
+    </form>
+    <script>
+      function calculate() {
+        const dob = new Date(document.getElementById("dob").value);
+        const age = calculateAge(dob);
+        document.getElementById("result").innerHTML = "Edad: " + age + " años";
+      }
+      
+      function calculateAge(birthDate) {
+        const today = new Date();
+        const diffInMilliseconds = today.getTime() - birthDate.getTime();
+        const ageDate = new Date(diffInMilliseconds);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+      }
+    </script>
+  </body>
+</html>

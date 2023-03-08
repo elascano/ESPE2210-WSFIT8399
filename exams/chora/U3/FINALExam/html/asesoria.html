@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Star WAR AGE</title>
+<link rel="icon" type="image/x-icon" href="../Imagenes/logo2.png">
+<link rel="stylesheet" href="../css/estilo.css">
+<script src="../js/calculateAge.js"></script>
+</head>
+
+<body>
+	
+	<header>
+		<div align="left">
+			<a href="Index.html"><img src="../Imagenes/logo2.png" alt="Logo" width="250" height="120"></a>	<!--- INSERTAR LOGO --->
+		</div>
+		<div align="right">
+			<a href="registrarse.html">LogIn</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="iniciar.html">SingnIn</a>
+		</div>
+	</header>
+		
+	<h1 align="center">STAR WAR </h1> <!--- TITULO --->
+
+		
+<div align="center">	<!--- DIV PARA CENTRAR --->
+	<table width="1089" height="41.6" border="0">	<!--- SE INSERTA UNA TABLA --->
+	  <tbody>
+		<tr>
+		  <td> <p align="center"><a  href="../Index.html">HOME</a></p></td>	
+
+		
+	
+		  <td> <p align="center"><a href="asesoria.html">CALCULATE AGE</a></p></td>
+
+		  
+		</tr>
+	  </tbody>
+	</table>
+</div>
+
+	<br><br><br><br>
+
+
+		<div align="center">
+			<h1>Asesoria</h1>
+			
+				<table width="401" border="1" padding-left: 920px;>
+				<tr>
+				<td>
+					<h1 style="color: blue ">Age Calculate Costumers  </h1>
+    					<form>
+      						<label style="color: rgb(64, 28, 117) " for="dob">Enter of your birth:</label>
+     						 <input type="date" id="dob" name="dob">
+     						 <br>
+      						<button type="button" onclick="calculate()">Calculate Age</button>
+     						 <br>
+     						 <div id="result"></div>
+    						</form>
+    							<script>
+     								 function calculate() {
+        								const dob = new Date(document.getElementById("dob").value);
+        								const age = calculateAge(dob);
+       									 document.getElementById("result").innerHTML = "Edad: " + age + " años";
+      								}
+      
+      								function calculateAge(birthDate) {
+        							const today = new Date();
+        							const diffInMilliseconds = today.getTime() - birthDate.getTime();
+        							const ageDate = new Date(diffInMilliseconds);
+        							return Math.abs(ageDate.getUTCFullYear() - 1970);
+      									}
+    						</script>
+				</td>
+				</tr>
+				</table>
+		</div>
+	
+		<br><br><br><br>
+
+
+		<footer align="center">
+			<a target="_blank"  href="https://www.facebook.com/artemueblesByronC44TSBC"><img src="../imagenes/facebook.png" alt="Logo" width="20" height="20"></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a target="_blank"  href="https://www.instagram.com/artes_muebles.ec/"><img src="../imagenes/instagram.png" alt="Logo" width="20" height="20"></a>
+		</footer>
+	
+</body>
+	
+	
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+    <link href="CSS/Styles_forms.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECORD</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container logo-nav">
+            <center><a>
+                STAR WARS
+            </a></center>
+            <a>
+                <img src="Imagen/logo.png" class="imgLogo">
+            </a>
+
+            <span class="menu-icon">MENU</span>
+            <nav class="navigation">
+                <center><ul>
+                    <li><a id="regresar" href="index.html">Home</a></li>
+                    <li><a id="regresar" href="Forms.html">Tickets</a></li>
+                    <li><a id="regresar" href="menu.html">Products</a></li>
+                    <li><a id="regresar" href="Forms.html">Record</a></li>
+                    <li><a id="regresar" href="Forms.html">Community</a></li>
+                </ul></center>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="forms">
+        <h4>
+            RECORD
+        </h4>
+        <form method="get">
+            <div>
+                ID:<input class="controls" type="text" name="code" id="code"
+                    placeholder="Ingrese codigo" onblur="return validatecodeproduct()">
+                    <span id="code-error" class="error-message"></span>
+            </div>
+            <div>
+                NAME:<input class="controls" type="text" name="code" id="code"
+                    placeholder="Ingrese codigo" onblur="return validatecodeproduct()">
+                    <span id="code-error" class="error-message"></span>
+            </div>
+            <div>
+                LASTNAME:<input class="controls" type="text" name="code" id="code"
+                    placeholder="Ingrese codigo" onblur="return validatecodeproduct()">
+                    <span id="code-error" class="error-message"></span>
+            </div>
+            <div>
+                GENDER:<input class="controls" type="text" name="code" id="code"
+                    placeholder="Ingrese codigo" onblur="return validatecodeproduct()">
+                    <span id="code-error" class="error-message"></span>
+            </div>
+            <div>
+                Color:
+                <select id="color" name="color">
+                    <option value"opcion">Seleccione</option>
+                    <option value"Negro">Negro</option>
+                    <option value"Gris">Gris</option>
+                    <option value"Blanco">Blanco</option>
+                </select>
+            </div>
+            <div>
+                Precio:<input class="controls" type="text" name="price" id="price" placeholder="Ingrese el precio"
+                onblur="return validateprice()">
+                <span id="price-error" class="error-message"></span>
+            </div>
+            <div>
+                <center>
+                    <input class="button" type="submit" value="Enviar"> <input class="button" type="reset"
+                        value="Reset">
+                </center> <br>
+            </div>
+        </form>
+        </center>
+    </section>
+</body>
+
+</html>
