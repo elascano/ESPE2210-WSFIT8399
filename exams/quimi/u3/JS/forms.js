@@ -1,77 +1,129 @@
-let expressions = {
-    code: /^[a-zA-Z]{3}\d{4}$/,
-    cant: /^\d{4}$/,
-    price: /^\d+(\.\d{1,2})?$/
-}
-function validatecodeproduct() {
-    // Expresión regular para validar la cadena
-    let inp = document.getElementById('code').value;
-    let brandRegex = /^[a-zA-Z]{3}\d{4}$/;
-    let brandError = document.getElementById('code-error');
-    if (inp.trim() === '') {
-        brandError.innerText = "Please enter the code.";
-        brandError.style.display = 'block';
-        return false;
-    } else if (!brandRegex.test(inp)) {
-        brandError.innerText = "The code entered is not valid.";
-        brandError.style.display = 'block';
-        return false;
+
+function validarServicioREST(url) {
+
+    var xhttp = new XMLHttpRequest();
+  
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+  
+        var respuesta = JSON.parse(this.responseText);
+        if (respuesta.hasOwnProperty("datos") && Array.isArray(respuesta.datos)) {
+  
+          console.log("REST service is valid.");
+        } else {
+          console.error("The response from the REST service is invalid.");
+        }
+      } else if (this.readyState == 4) {
+  
+        console.error("REST service is not available.");
+      }
+    };
+  
+    xhttp.open("GET", url, true);
+    xhttp.send();
+  }
+  
+  function validateIdentification() {
+    let id = document.getElementById('identification').value;
+    let regex = /^[0-9]{10}$/;
+    let lastIdError = document.getElementById('id-error');
+    
+    if (id.trim() === '') {
+      lastIdError.innerText = "Por favor ingrese la identificación.";
+      lastIdError.style.display = 'block';
+      lastIdError.style.color = 'red';
+      return false;
+    } else if (!regex.test(id) || isNaN(id)) {
+      lastIdError.innerText = "!Advertencia: identificación no válida";
+      lastIdError.style.display = 'block';
+      lastIdError.style.color = 'red';
+      return false;
     } else {
-        brandError.style.display = 'none';
+      lastIdError.style.display = 'none';
+      return true;
+    }
+  } 
+  
+  function validateName (){
+  
+      let name = document.getElementById('name').value;
+      let regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{4,10}$/;
+      let nameError = document.getElementById('name-error');
+  
+      if (name.trim() === '') {
+          nameError.innerText = "Please enter the name.";
+          nameError.style.display = 'block';
+          nameError.style.color = 'red';
+          return false;
+        } else if (!regex.test(name)) {
+          nameError.innerText = "!Warning: Invalid name";
+          nameError.style.display = 'block';
+          nameError.style.color = 'red';
+          return false;
+        }else {
+          nameError.style.display = 'none';
+          return true;
+        }
+  }
+  
+
+  function  validateLastName() {
+   
+      let lastname = document.getElementById('lastname').value;
+      let regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{4,10}$/;
+      let lastnameError = document.getElementById('last-error');
+  
+      if (lastname.trim() === '') {
+          lastnameError.innerText = "Please enter the lastname.";
+          lastnameError.style.display = 'block';
+          lastnameError.style.color = 'red';
+          return false;
+        } else if (!regex.test(lastname)) {
+          lastnameError.innerText = "!Warning: Invalid lastname";
+          lastnameError.style.display = 'block';
+          lastnameError.style.color = 'red';
+          return false;
+        }else {
+          nameError.style.display = 'none';
+          return true;
+        }
+  }
+  
+  
+  
+  
+
+  
+    function validateage() {
+      let age = document.getElementById('age').value;
+      let regex = /^[0-9]{10}$/;
+      let ageError = document.getElementById('age-error');
+      
+      if (age.trim() === '') {
+        ageError.innerText = "Enter your age.";
+        ageError.style.display = 'block';
+        ageError.style.color = 'red';
+        return false;
+      } else if (!regex.test(phone)) {
+        ageError.innerText = "!Warning: wrong age";
+        ageError.style.display = 'block';
+        ageError.style.color = 'red';
+        return false;
+      } else {
+        ageeError.style.display = 'none';
         return true;
+      }
     }
-}
-
-function validatecant() {
-    // Expresión regular para validar la cadena
-    let inp = document.getElementById('cant').value;
-    let brandRegex = /^\d{4}$/;
-    let brandError = document.getElementById('cant-error');
-    // Verificar si la cadena cumple con la expresión regular
-    if (inp.trim() === '') {
-        brandError.innerText = "Please enter the cant.";
-        brandError.style.display = 'block';
-        return false;
-    } else if (!brandRegex.test(inp)) {
-        brandError.innerText = "The cant entered is not valid.";
-        brandError.style.display = 'block';
-        return false;
-    } else {
-        brandError.style.display = 'none';
-        return true;
-    }
-}
-
-function validateprice() {
-    // Expresión regular para validar el precio
-    let inp = document.getElementById('price').value;
-    let brandRegex = /^\d+(\.\d{1,2})?$/;
-    let brandError = document.getElementById('price-error');
-
-    if (inp.trim() === '') {
-        brandError.innerText = "Please enter the price.";
-        brandError.style.display = 'block';
-        return false;
-    } else if (!brandRegex.test(inp)) {
-        brandError.innerText = "The price entered is not valid.";
-        brandError.style.display = 'block';
-        return false;
-    } else {
-        brandError.style.display = 'none';
-        return true;
-    }
-
-    // Verificar si el precio es un número
-    /*if (isNaN(precio)) {
-        return false; // no es un número
-    }
-
-    // Verificar si el precio cumple con la expresión regular
-    if (!regex.test(precio)) {
-        return false; // no cumple con la estructura de un precio válido
-    }
-
-    // Precio válido
-    return true;*/
-}
-
+    
+    function validarMoney() {
+        var money = document.getElementById('money').value;
+        let moneyError = document.getElementById('moneyerror');
+        
+        if (money.trim() === '') {
+            dateError.innerText = "!Warning:La fecha ingresada no puede ser mayor que la fecha actual.";
+            dateError.style.display = 'block';
+            dateError.style.color = 'red'; 
+          event.preventDefault();
+        }
+      }
+    
