@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object </h2>
+<p id="demo"></p>
+
+<script>
+const myJSON = '{"code":"DS-2CD6365GOE-IVS", "product":"Fisheye Network Camera", "brand":"Hikvision"}';
+const myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj["product"];
+document.getElementById("demo").innerHTML = myObj.product;
+</script>
+
+</body>
+</html>
