@@ -1,5 +1,11 @@
 Para trabajar con react se debe instalar lo siguiente para crear un react en una carpeta se abre lo siguiente: npx create-react-app nombre_proyecto
 
+Para inicializar el proyecto se debe abrir la carpeta.
+Para descargar los node modules en un proyecto React, se puede utilizar el administrador de paquetes de Node.js llamado npm (Node Package Manager). Los pasos a seguir son los siguientes:
+
+Abrir la línea de comandos o terminal en la carpeta del proyecto React.
+Ejecutar el comando npm install para instalar todas las dependencias del proyecto que se encuentran en el archivo package.json.
+
 
 
 
