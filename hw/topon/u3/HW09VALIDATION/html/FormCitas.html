@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta characters="UTF-8">
+    <meta name="viewport" content="width=device-wisth, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<title> OrtodonciaForm5</title>
+
+<body>
+    <form>
+        <div class="img">
+        </div>
+
+        <center>
+            <th>
+                <img src="OD5.jpeg" width="300">
+            </th>
+            <table border="2">
+                <tr>
+                    <th width="200"> <a href="index.html"> INICIO </a> </th>
+                    <th width="200"> <a href="form registrar.html"> REGISTRO </a> </th>
+                    <th width="200"> <a href="FormCitas.html"> CITAS </a> </th>
+                    <th width="200"> <a href="GALERIA.html"> GALERIA </a> </th>
+                    <th width="200"> <a href="novedades.html"> NOVEDADES </a> </th>
+                </tr>
+                <style>
+                </style>
+
+            </table>
+        </center>
+
+
+        <section class="form-register">
+            <img src="OD5.jpeg" width="345px" height="150">
+            <h1 align="center">AGENDAR UNA CITA</h1>
+            <h2>Datos del paciente</h2>
+            <br>
+            C&eacute;dula de indentidad <input class="controls" type="text" name="ID" id="Fname"
+                placeholder="Ej: 1752373140">
+            Nombre <input class="controls" type="text" name="Fname" id="Fname" placeholder="Javier">
+            Apellido <input class="controls" type="text" name="Surname" id="Surname" placeholder="Diaz">
+            <td><label for="genero">G&eacute;nero</label><br></td>
+            <td><input type="radio" genero="male" name="genero" value="Hombre">
+                <label for="male">Hombre</label><br>
+                <input type="radio" genero="female" name="genero" value="Mujer">
+                <label for="female">Mujer</label><br>
+                <input type="radio" genero="none" name="genero" value="Otro">
+                <label for="none">Otro</label><br>
+            </td>
+            Fecha de nacimiento <input class="controls" type="date" name="Birthday" id="Number">
+            N&uacute;mero celular <input class="controls" type="text" name="Number" id="Number"
+                placeholder="0969854125">
+            Correo electr&oacute;nico <input class="controls" type="text" name="Email" id="Email"
+                placeholder="Ej: name@gmail.com">
+
+            <h2>Datos de la cita</h2>
+            <br>
+            Especialidad
+            <select>
+                <option>Seleccionar</option>
+                <option>Odontologia General</option>
+                <option>Endodoncia</option>
+                <option>Odontopediatria</option>
+                <option>Ortodoncia</option>
+                <option>Odontologia estetica</option>
+                <option>Cirugia oral</option>
+                <option>Cirugia Maxilofacial</option>
+            </select>
+            <br>
+            <br>Doctores
+            <select>
+                <option>Selecionar</option>
+                <option>Silvia Jimenez</option>
+                <option>Paty Caraguay</option>
+                <option>Silvia Fernández</option>
+                <option>Henry Chancusio</option>
+                <option>Carolina Badillo</option>
+                <option>Byron Alvear</option>
+                <option>Luis Pacheco</option>
+                <option>Tony Pacheco</option>
+            </select>
+            <br>
+            <br>Fecha para la cita <input class="controls" type="date" name="Birthday" id="Number">
+            <br>Hora para la cita <input class="controls" type="datetime" name="Birthday" id="Number">
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">Acepto <a href="#">t&eacute;rminos y condiciones.</a></label>
+            </div>
+
+            <table width="100%">
+                <td align="center">
+                    <input class="buttons" type="submit" value="Agendar cita" width="25">
+                    <input class="buttons" type="reset" value="Reestablecer" width="40">
+                </td>
+            </table>
+
+        </section>
+
+    </form>
+</body>
+
+</html>

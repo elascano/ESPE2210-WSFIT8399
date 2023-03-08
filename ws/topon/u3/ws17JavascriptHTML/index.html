@@ -1,44 +1,52 @@
-<!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Complex Widgets by KEVIN TOPON </title>
+<html>
 
-    <script>
-        function computeAddition(){
-            var initialposition=parseFloat(document.getElementById('initialposition').value);
-            var speed=parseFloat(document.getElementById('speed').value);
-            var time=parseFloat(document.getElementById('time').value);
-            var endposition=initialposition+(speed*time);
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Commpatible" content="IE=edge">
+    <meta names="viewport" content="wodth=device-width, initial-scale=1.0">
+	<title>KEVIN TOPON</title>
+</head>
 
-            alert("the endposition of "+initialposition+" + "+speed+" *"+time+" is --> "+endposition)
-        }
-    </script>
-  </head>
-  <body>
-      <hr/>
-       <h1>HW 08 WSF</h1>
-       <h2>Calculator by Liliana KEVIN DAVID TOPON </h2>
-      <hr/>
-      
-        <form action="">
+<h1> KEVIN TOPON </h1>
+
+<body>
+<hr/>
+<h1> Complex widgets (Graphical Controls)</h1>
+<h2> Simple:text, password, checkkbox</h2>
+
+    <div class="Segment">
+        <form action="" method="GET">
+            <ol>
+            <li> <input type="checkbox"> check </input> </li>
+            <li> <input type="radio"> radio </imput> </li>
+            <li> <input type="password"> password </imput> </li>
+            <li> <input type="color"> color </imput> </li>
+            <li> <input type="datetime-local">datetime local </imput> </li>
+            <li> <input type="email"> email </imput> </li>
+            <li> <input type="file"> file </imput> </li>
+            <li> <input type="image"> image </imput> </li>
+            <li> <input type="month"> month </imput> </li>
+            <li> <input type="number"> number </imput> </li>
+            <li> <input type="range"> range </imput> </li>
+            <li> <input type="time"> time </imput> </li>
+            <li> <input type="week"> week </imput> </li>
+            <li> <input type="url"> url </imput> </li>
+            <li> <input type="number"> number </imput> </li>
+            <li> <input tye="tel" od="homephone" name="homephone" pattern="¨[0-9] {3}-[0-9] {2}-[0-9]{7}"
+                <small> Format: 593-03-123344</smal></li>
+                    
+            </ol>
             <hr>
-            <p>Uniform line movement MRU</p>
-            <label for="initial position">initial position</label>
-            <input type="number" name="initialposition" id="initialposition" step="0.01" min="0" max="100">
-            <br>
-            <label for="Speed">speed</label>
-            <input type="number" name="speed" id="speed" step="0.01" min="0" max="100">
-            <br>
-            <label for="Time">time</label>
-            <input type="number" name="time" id="time" step="0.01" min="0" max="100">
-            <br>
-            <input type="submit" name="add" id="add" value="endposition" onclick="computeAddition();"></input>
-            <input type="submit" name="substract" id="substract" value="-" onclick="computeSubtraction();"></input>
+            <ol>
+                <li> <input type="button"> button</imput> </li>
+                <li> <input type="submit"> SUBMIT </imput> </li>
+                <li> <input type="reset"> reset </imput> </li>
+            </ol>
+            
+          
 
 
-        </form>
-      </div>
-  </body>
-</html>  
+</form>
+    
+
+</body></html>
