@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="widt=device-with, initial-scale=1.0">
+    <link href="CSS/Styleform.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../u3/JS/validate.js"></script>
+    <tite>PLANETS</title>
+</head>
+
+<body>
+    <section class="form_estudiantes">
+        <h4>
+            PLANETS OF START WARS
+        </h4>
+        <form method="get">
+            <div>
+                ID PLANET :<input class="controls" type="text" name="code" id="code"
+                    placeholder="Enter Code" onblur="return validatecodeP()">
+                    <span id="code-error" class="error-message" style="color: red"></span>
+            </div>
+            <div>
+                NAME PLANET :<input class="controls" type="text" name="code" id="code" placeholder="Ingrese Nombre">
+            </div>
+            <div>
+                COLOR:
+                <select id="marca" name="marca">
+                    <option value"opcion">Seleccione</option>
+                    <option value"Matematicas">RED</option>
+                    <option value"Ciencias">WHITE</option>
+                    <option value"Sociales">BLUE</option>
+                    <option value"Programacion">GREEN</option>
+                </select>
+            </div>
+                CLIMATE:
+                <select id="marca" name="marca">
+                    <option value"opcion">Seleccione</option>
+                    <option value"TEMPLADO">TEMPLADO</option>
+                    <option value"NUBLOSO">NUBLOSO</option>
+                    <option value"CALIENTE">CALIENTE</option>
+                    <option value"FRIO">FRIGID</option>
+                    <option value"HUMEDO">HUMEDO</option>
+                </select>
+            </div>
+            <div>
+                <center>
+                    <input class="button" type="submit" value="Enviar"> <input class="button" type="reset"
+                        value="Reset">
+                </center> <br>
+            </div>
+        </form>
+        </center>
+    </section>
+</body>
+
+</html>
