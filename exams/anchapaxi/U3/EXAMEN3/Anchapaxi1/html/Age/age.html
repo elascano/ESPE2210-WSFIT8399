@@ -41,17 +41,24 @@
       <table cellpadding="15">
         <tr>
           <td><label for="service">Fecha:</label></td>
-          <td><input type="date" id="service" required></td>
+          <td><input type="date" id="fechaNacimiento" min="1920-01-01" max="2023-03-07"></td>
+          <td></td>
         </tr>
-      
+        <tr>
     </table><br>
-        <td><input type="submit" value="add" onClick="isFormValid()"></td>
-        <td><input type="reset"></td>
+
     </form>
-    <br>
-    <br>
-    <img src="../../img/piedpagina.webp" width="100%">
-  <script src="../../js/validacion_preventa.js"></script>
+
+
+  <body>
+      <h1 id="edad"></h1>
+      <script src="../../js/validationAge.js"></script>
+  </body>
+
+
+  <img src="../../img/piedpagina.webp" width="100%">
+
+
 </center>
   </body>
   </html>
