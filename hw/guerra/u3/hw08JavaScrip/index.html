@@ -1,0 +1,28 @@
+<div class="segment">
+    <form action="">
+        <hr>
+        <label for="mass">mass</label>
+        <input type="number" name="mass" id="mass" step="0.01" min="0" max="100">
+        <br>
+        <label for="mass">acceleration</label>
+        <input type="number" name="acceleration" id="acceleration" step="0.01" min="0" >
+        <br>
+    
+        <input type="submit" name="add" id="add" value="*" onclick="computeforce();">
+        <input type="submit" name="subtract" id="subtract" value="-" onclick="computeSubtraction();">
+        <br>
+    </form>
+</div>
+//DOM
+
+<script>
+    function computeforce(){
+        var mass= parseFloat(document.getElementById('mass').value);
+        var acceleration= parseFloat(document.getElementById('acceleration').value);
+
+        var force = mass*acceleration;
+
+        alert("The force of" + mass + "*" + acceleration + "is --->" + force )
+
+    }
+</script>
